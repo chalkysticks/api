@@ -1,0 +1,2054 @@
+[
+    {
+        "city": "York",
+        "state": "England"
+    },
+    {
+        "city": "Yeovil",
+        "state": "England"
+    },
+    {
+        "city": "Yeadon",
+        "state": "England"
+    },
+    {
+        "city": "Yate",
+        "state": "England"
+    },
+    {
+        "city": "Wrexham",
+        "state": "Wales"
+    },
+    {
+        "city": "Worthing",
+        "state": "England"
+    },
+    {
+        "city": "Worksop",
+        "state": "England"
+    },
+    {
+        "city": "Workington",
+        "state": "England"
+    },
+    {
+        "city": "Worcester",
+        "state": "England"
+    },
+    {
+        "city": "Woodford Green",
+        "state": "England"
+    },
+    {
+        "city": "Wombwell",
+        "state": "England"
+    },
+    {
+        "city": "Wolverhampton",
+        "state": "England"
+    },
+    {
+        "city": "Wokingham",
+        "state": "England"
+    },
+    {
+        "city": "Woking",
+        "state": "England"
+    },
+    {
+        "city": "Witney",
+        "state": "England"
+    },
+    {
+        "city": "Witham",
+        "state": "England"
+    },
+    {
+        "city": "Wishaw",
+        "state": "Scotland"
+    },
+    {
+        "city": "Wisbech",
+        "state": "England"
+    },
+    {
+        "city": "Winsford",
+        "state": "England"
+    },
+    {
+        "city": "Windsor",
+        "state": "England"
+    },
+    {
+        "city": "Winchester",
+        "state": "England"
+    },
+    {
+        "city": "Wilmslow",
+        "state": "England"
+    },
+    {
+        "city": "Willenhall",
+        "state": "England"
+    },
+    {
+        "city": "Wigston Magna",
+        "state": "England"
+    },
+    {
+        "city": "Wigan",
+        "state": "England"
+    },
+    {
+        "city": "Widnes",
+        "state": "England"
+    },
+    {
+        "city": "Wickford",
+        "state": "England"
+    },
+    {
+        "city": "Whitstable",
+        "state": "England"
+    },
+    {
+        "city": "Whitley Bay",
+        "state": "England"
+    },
+    {
+        "city": "Whitehaven",
+        "state": "England"
+    },
+    {
+        "city": "Whitefield",
+        "state": "England"
+    },
+    {
+        "city": "Whickham",
+        "state": "England"
+    },
+    {
+        "city": "Weymouth",
+        "state": "England"
+    },
+    {
+        "city": "Weybridge",
+        "state": "England"
+    },
+    {
+        "city": "Weston-super-Mare",
+        "state": "England"
+    },
+    {
+        "city": "West Molesey",
+        "state": "England"
+    },
+    {
+        "city": "Westhoughton",
+        "state": "England"
+    },
+    {
+        "city": "West Bromwich",
+        "state": "England"
+    },
+    {
+        "city": "West Bridgford",
+        "state": "England"
+    },
+    {
+        "city": "Welwyn Garden City",
+        "state": "England"
+    },
+    {
+        "city": "Wellington",
+        "state": "England"
+    },
+    {
+        "city": "Wellingborough",
+        "state": "England"
+    },
+    {
+        "city": "Welling",
+        "state": "England"
+    },
+    {
+        "city": "Wednesfield",
+        "state": "England"
+    },
+    {
+        "city": "Wednesbury",
+        "state": "England"
+    },
+    {
+        "city": "Wath upon Dearne",
+        "state": "England"
+    },
+    {
+        "city": "Watford",
+        "state": "England"
+    },
+    {
+        "city": "Waterlooville",
+        "state": "England"
+    },
+    {
+        "city": "Washington",
+        "state": "England"
+    },
+    {
+        "city": "Warwick",
+        "state": "England"
+    },
+    {
+        "city": "Warrington",
+        "state": "England"
+    },
+    {
+        "city": "Warminster",
+        "state": "England"
+    },
+    {
+        "city": "Ware",
+        "state": "England"
+    },
+    {
+        "city": "Walton-on-Thames",
+        "state": "England"
+    },
+    {
+        "city": "Waltham Abbey",
+        "state": "England"
+    },
+    {
+        "city": "Walsall",
+        "state": "England"
+    },
+    {
+        "city": "Wallsend",
+        "state": "England"
+    },
+    {
+        "city": "Wallasey",
+        "state": "England"
+    },
+    {
+        "city": "Walkden",
+        "state": "England"
+    },
+    {
+        "city": "Wakefield",
+        "state": "England"
+    },
+    {
+        "city": "Urmston",
+        "state": "England"
+    },
+    {
+        "city": "Uckfield",
+        "state": "England"
+    },
+    {
+        "city": "Stowmarket",
+        "state": "England"
+    },
+    {
+        "city": "Stourport-on-Severn",
+        "state": "England"
+    },
+    {
+        "city": "Stourbridge",
+        "state": "England"
+    },
+    {
+        "city": "Stoke-on-Trent",
+        "state": "England"
+    },
+    {
+        "city": "Stockton-on-Tees",
+        "state": "England"
+    },
+    {
+        "city": "Stockport",
+        "state": "England"
+    },
+    {
+        "city": "Stirling",
+        "state": "Scotland"
+    },
+    {
+        "city": "Stevenage",
+        "state": "England"
+    },
+    {
+        "city": "Staveley",
+        "state": "England"
+    },
+    {
+        "city": "Stamford",
+        "state": "England"
+    },
+    {
+        "city": "Stalybridge",
+        "state": "England"
+    },
+    {
+        "city": "Staines",
+        "state": "England"
+    },
+    {
+        "city": "Stafford",
+        "state": "England"
+    },
+    {
+        "city": "Spennymoor",
+        "state": "England"
+    },
+    {
+        "city": "Spalding",
+        "state": "England"
+    },
+    {
+        "city": "South Shields",
+        "state": "England"
+    },
+    {
+        "city": "Southsea",
+        "state": "England"
+    },
+    {
+        "city": "Southport",
+        "state": "England"
+    },
+    {
+        "city": "South Ockendon",
+        "state": "England"
+    },
+    {
+        "city": "Southend-on-Sea",
+        "state": "England"
+    },
+    {
+        "city": "South Elmsall",
+        "state": "England"
+    },
+    {
+        "city": "South Benfleet",
+        "state": "England"
+    },
+    {
+        "city": "Southampton",
+        "state": "England"
+    },
+    {
+        "city": "Southall",
+        "state": "England"
+    },
+    {
+        "city": "Solihull",
+        "state": "England"
+    },
+    {
+        "city": "Slough",
+        "state": "England"
+    },
+    {
+        "city": "Sleaford",
+        "state": "England"
+    },
+    {
+        "city": "Skelmersdale",
+        "state": "England"
+    },
+    {
+        "city": "Skegness",
+        "state": "England"
+    },
+    {
+        "city": "Sittingbourne",
+        "state": "England"
+    },
+    {
+        "city": "Shrewsbury",
+        "state": "England"
+    },
+    {
+        "city": "Shoreham-by-Sea",
+        "state": "England"
+    },
+    {
+        "city": "Shoreham",
+        "state": "England"
+    },
+    {
+        "city": "Shipley",
+        "state": "England"
+    },
+    {
+        "city": "Sheffield",
+        "state": "England"
+    },
+    {
+        "city": "Sevenoaks",
+        "state": "England"
+    },
+    {
+        "city": "Selby",
+        "state": "England"
+    },
+    {
+        "city": "Seaham",
+        "state": "England"
+    },
+    {
+        "city": "Seaford",
+        "state": "England"
+    },
+    {
+        "city": "Scunthorpe",
+        "state": "England"
+    },
+    {
+        "city": "Scarborough",
+        "state": "England"
+    },
+    {
+        "city": "Sandown",
+        "state": "England"
+    },
+    {
+        "city": "Sandbach",
+        "state": "England"
+    },
+    {
+        "city": "Salisbury",
+        "state": "England"
+    },
+    {
+        "city": "Salford",
+        "state": "England"
+    },
+    {
+        "city": "Sale",
+        "state": "England"
+    },
+    {
+        "city": "Saint Neots",
+        "state": "England"
+    },
+    {
+        "city": "St Helens",
+        "state": "England"
+    },
+    {
+        "city": "St Austell",
+        "state": "England"
+    },
+    {
+        "city": "Saint Andrews",
+        "state": "Scotland"
+    },
+    {
+        "city": "St Albans",
+        "state": "England"
+    },
+    {
+        "city": "Ryton",
+        "state": "England"
+    },
+    {
+        "city": "Ryde",
+        "state": "England"
+    },
+    {
+        "city": "Rutherglen",
+        "state": "Scotland"
+    },
+    {
+        "city": "Rushden",
+        "state": "England"
+    },
+    {
+        "city": "Runcorn",
+        "state": "England"
+    },
+    {
+        "city": "Ruislip",
+        "state": "England"
+    },
+    {
+        "city": "Rugeley",
+        "state": "England"
+    },
+    {
+        "city": "Rugby",
+        "state": "England"
+    },
+    {
+        "city": "Royton",
+        "state": "England"
+    },
+    {
+        "city": "Royal Tunbridge Wells",
+        "state": "England"
+    },
+    {
+        "city": "Rottingdean",
+        "state": "England"
+    },
+    {
+        "city": "Rotherham",
+        "state": "England"
+    },
+    {
+        "city": "Romsey",
+        "state": "England"
+    },
+    {
+        "city": "Rochford",
+        "state": "England"
+    },
+    {
+        "city": "Rochester",
+        "state": "England"
+    },
+    {
+        "city": "Rochdale",
+        "state": "England"
+    },
+    {
+        "city": "Risca",
+        "state": "Wales"
+    },
+    {
+        "city": "Ripon",
+        "state": "England"
+    },
+    {
+        "city": "Ripley",
+        "state": "England"
+    },
+    {
+        "city": "Rhyl",
+        "state": "Wales"
+    },
+    {
+        "city": "Rhondda",
+        "state": "Wales"
+    },
+    {
+        "city": "Renfrew",
+        "state": "Scotland"
+    },
+    {
+        "city": "Reigate",
+        "state": "England"
+    },
+    {
+        "city": "Redhill",
+        "state": "England"
+    },
+    {
+        "city": "Redditch",
+        "state": "England"
+    },
+    {
+        "city": "Redcar",
+        "state": "England"
+    },
+    {
+        "city": "Reading",
+        "state": "England"
+    },
+    {
+        "city": "Rayleigh",
+        "state": "England"
+    },
+    {
+        "city": "Rawtenstall",
+        "state": "England"
+    },
+    {
+        "city": "Rawmarsh",
+        "state": "England"
+    },
+    {
+        "city": "Ramsgate",
+        "state": "England"
+    },
+    {
+        "city": "Ramsbottom",
+        "state": "England"
+    },
+    {
+        "city": "Purley",
+        "state": "England"
+    },
+    {
+        "city": "Pudsey",
+        "state": "England"
+    },
+    {
+        "city": "Prestwick",
+        "state": "Scotland"
+    },
+    {
+        "city": "Prestwich",
+        "state": "England"
+    },
+    {
+        "city": "Preston",
+        "state": "England"
+    },
+    {
+        "city": "Prestatyn",
+        "state": "Wales"
+    },
+    {
+        "city": "Prescot",
+        "state": "England"
+    },
+    {
+        "city": "Poulton le Fylde",
+        "state": "England"
+    },
+    {
+        "city": "Potters Bar",
+        "state": "England"
+    },
+    {
+        "city": "Portsmouth",
+        "state": "England"
+    },
+    {
+        "city": "Portslade",
+        "state": "England"
+    },
+    {
+        "city": "Portishead",
+        "state": "England"
+    },
+    {
+        "city": "Porthcawl",
+        "state": "Wales"
+    },
+    {
+        "city": "Port Glasgow",
+        "state": "Scotland"
+    },
+    {
+        "city": "Portadown",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Poole",
+        "state": "England"
+    },
+    {
+        "city": "Pontypridd",
+        "state": "Wales"
+    },
+    {
+        "city": "Pontypool",
+        "state": "Wales"
+    },
+    {
+        "city": "Pontefract",
+        "state": "England"
+    },
+    {
+        "city": "Polmont",
+        "state": "Scotland"
+    },
+    {
+        "city": "Plymstock",
+        "state": "England"
+    },
+    {
+        "city": "Plymouth",
+        "state": "England"
+    },
+    {
+        "city": "Pitsea",
+        "state": "England"
+    },
+    {
+        "city": "Pinner",
+        "state": "England"
+    },
+    {
+        "city": "Peterlee",
+        "state": "England"
+    },
+    {
+        "city": "Peterhead",
+        "state": "Scotland"
+    },
+    {
+        "city": "Peterborough",
+        "state": "England"
+    },
+    {
+        "city": "Perth",
+        "state": "Scotland"
+    },
+    {
+        "city": "Penzance",
+        "state": "England"
+    },
+    {
+        "city": "Penicuik",
+        "state": "Scotland"
+    },
+    {
+        "city": "Penarth",
+        "state": "Wales"
+    },
+    {
+        "city": "Paisley",
+        "state": "Scotland"
+    },
+    {
+        "city": "Paignton",
+        "state": "England"
+    },
+    {
+        "city": "Oxford",
+        "state": "England"
+    },
+    {
+        "city": "Oswestry",
+        "state": "England"
+    },
+    {
+        "city": "Ossett",
+        "state": "England"
+    },
+    {
+        "city": "Orpington",
+        "state": "England"
+    },
+    {
+        "city": "Ormskirk",
+        "state": "England"
+    },
+    {
+        "city": "Omagh",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Oldham",
+        "state": "England"
+    },
+    {
+        "city": "Oadby",
+        "state": "England"
+    },
+    {
+        "city": "Nuneaton",
+        "state": "England"
+    },
+    {
+        "city": "Nottingham",
+        "state": "England"
+    },
+    {
+        "city": "Norwich",
+        "state": "England"
+    },
+    {
+        "city": "Northwich",
+        "state": "England"
+    },
+    {
+        "city": "North Shields",
+        "state": "England"
+    },
+    {
+        "city": "Northolt",
+        "state": "England"
+    },
+    {
+        "city": "Lancing",
+        "state": "England"
+    },
+    {
+        "city": "Northampton",
+        "state": "England"
+    },
+    {
+        "city": "Northallerton",
+        "state": "England"
+    },
+    {
+        "city": "Newtownards",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Newtownabbey",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Newton Mearns",
+        "state": "Scotland"
+    },
+    {
+        "city": "Newton-le-Willows",
+        "state": "England"
+    },
+    {
+        "city": "Newton Aycliffe",
+        "state": "England"
+    },
+    {
+        "city": "Newton Abbot",
+        "state": "England"
+    },
+    {
+        "city": "Newry",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Newquay",
+        "state": "England"
+    },
+    {
+        "city": "Newport Pagnell",
+        "state": "England"
+    },
+    {
+        "city": "Newport",
+        "state": "Wales"
+    },
+    {
+        "city": "Newport",
+        "state": "England"
+    },
+    {
+        "city": "New Milton",
+        "state": "England"
+    },
+    {
+        "city": "Newmarket",
+        "state": "England"
+    },
+    {
+        "city": "New Malden",
+        "state": "England"
+    },
+    {
+        "city": "Newcastle upon Tyne",
+        "state": "England"
+    },
+    {
+        "city": "Newcastle under Lyme",
+        "state": "England"
+    },
+    {
+        "city": "Newbury",
+        "state": "England"
+    },
+    {
+        "city": "Newburn",
+        "state": "England"
+    },
+    {
+        "city": "Newark on Trent",
+        "state": "England"
+    },
+    {
+        "city": "Nelson",
+        "state": "England"
+    },
+    {
+        "city": "Neath",
+        "state": "Wales"
+    },
+    {
+        "city": "Nailsea",
+        "state": "England"
+    },
+    {
+        "city": "Musselburgh",
+        "state": "Scotland"
+    },
+    {
+        "city": "Motherwell",
+        "state": "Scotland"
+    },
+    {
+        "city": "Morley",
+        "state": "England"
+    },
+    {
+        "city": "Moreton",
+        "state": "England"
+    },
+    {
+        "city": "Morecambe",
+        "state": "England"
+    },
+    {
+        "city": "Mitcham",
+        "state": "England"
+    },
+    {
+        "city": "Mirfield",
+        "state": "England"
+    },
+    {
+        "city": "Milton Keynes",
+        "state": "England"
+    },
+    {
+        "city": "Middleton",
+        "state": "England"
+    },
+    {
+        "city": "Middlesbrough",
+        "state": "England"
+    },
+    {
+        "city": "Mexborough",
+        "state": "England"
+    },
+    {
+        "city": "Merthyr Tydfil",
+        "state": "Wales"
+    },
+    {
+        "city": "Melton Mowbray",
+        "state": "England"
+    },
+    {
+        "city": "Marple",
+        "state": "England"
+    },
+    {
+        "city": "Marlow",
+        "state": "England"
+    },
+    {
+        "city": "Market Harborough",
+        "state": "England"
+    },
+    {
+        "city": "Margate",
+        "state": "England"
+    },
+    {
+        "city": "March",
+        "state": "England"
+    },
+    {
+        "city": "Mansfield Woodhouse",
+        "state": "England"
+    },
+    {
+        "city": "Mansfield",
+        "state": "England"
+    },
+    {
+        "city": "Mangotsfield",
+        "state": "England"
+    },
+    {
+        "city": "Manchester",
+        "state": "England"
+    },
+    {
+        "city": "Maltby",
+        "state": "England"
+    },
+    {
+        "city": "Maldon",
+        "state": "England"
+    },
+    {
+        "city": "Maidstone",
+        "state": "England"
+    },
+    {
+        "city": "Maidenhead",
+        "state": "England"
+    },
+    {
+        "city": "Maghull",
+        "state": "England"
+    },
+    {
+        "city": "Maesteg",
+        "state": "Wales"
+    },
+    {
+        "city": "Macclesfield",
+        "state": "England"
+    },
+    {
+        "city": "Luton",
+        "state": "England"
+    },
+    {
+        "city": "Lowestoft",
+        "state": "England"
+    },
+    {
+        "city": "Louth",
+        "state": "England"
+    },
+    {
+        "city": "Loughborough",
+        "state": "England"
+    },
+    {
+        "city": "Longfield",
+        "state": "England"
+    },
+    {
+        "city": "Long Eaton",
+        "state": "England"
+    },
+    {
+        "city": "Londonderry County Borough",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Derry",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "City of London",
+        "state": "England"
+    },
+    {
+        "city": "London",
+        "state": "England"
+    },
+    {
+        "city": "Lofthouse",
+        "state": "England"
+    },
+    {
+        "city": "Llanelli",
+        "state": "Wales"
+    },
+    {
+        "city": "Llandudno",
+        "state": "Wales"
+    },
+    {
+        "city": "Livingston",
+        "state": "Scotland"
+    },
+    {
+        "city": "Liverpool",
+        "state": "England"
+    },
+    {
+        "city": "Littlehampton",
+        "state": "England"
+    },
+    {
+        "city": "Litherland",
+        "state": "England"
+    },
+    {
+        "city": "Lisburn",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Lincoln",
+        "state": "England"
+    },
+    {
+        "city": "Lichfield",
+        "state": "England"
+    },
+    {
+        "city": "Leyland",
+        "state": "England"
+    },
+    {
+        "city": "Lewes",
+        "state": "England"
+    },
+    {
+        "city": "Letchworth",
+        "state": "England"
+    },
+    {
+        "city": "Leighton Buzzard",
+        "state": "England"
+    },
+    {
+        "city": "Leigh",
+        "state": "England"
+    },
+    {
+        "city": "Leicester",
+        "state": "England"
+    },
+    {
+        "city": "Leek",
+        "state": "England"
+    },
+    {
+        "city": "Leeds",
+        "state": "England"
+    },
+    {
+        "city": "Leatherhead",
+        "state": "England"
+    },
+    {
+        "city": "Royal Leamington Spa",
+        "state": "England"
+    },
+    {
+        "city": "Larne",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Larkhall",
+        "state": "Scotland"
+    },
+    {
+        "city": "Lancaster",
+        "state": "England"
+    },
+    {
+        "city": "Kirkintilloch",
+        "state": "Scotland"
+    },
+    {
+        "city": "Kirkcaldy",
+        "state": "Scotland"
+    },
+    {
+        "city": "Kirkby in Ashfield",
+        "state": "England"
+    },
+    {
+        "city": "Kirkby",
+        "state": "England"
+    },
+    {
+        "city": "Kingswood",
+        "state": "England"
+    },
+    {
+        "city": "Kingswinford",
+        "state": "England"
+    },
+    {
+        "city": "Hull",
+        "state": "England"
+    },
+    {
+        "city": "King's Lynn",
+        "state": "England"
+    },
+    {
+        "city": "Kilwinning",
+        "state": "Scotland"
+    },
+    {
+        "city": "Kilmarnock",
+        "state": "Scotland"
+    },
+    {
+        "city": "Kidsgrove",
+        "state": "England"
+    },
+    {
+        "city": "Kidlington",
+        "state": "England"
+    },
+    {
+        "city": "Kidderminster",
+        "state": "England"
+    },
+    {
+        "city": "Keynsham",
+        "state": "England"
+    },
+    {
+        "city": "Kettering",
+        "state": "England"
+    },
+    {
+        "city": "Kenilworth",
+        "state": "England"
+    },
+    {
+        "city": "Kendal",
+        "state": "England"
+    },
+    {
+        "city": "Kempston",
+        "state": "England"
+    },
+    {
+        "city": "Keighley",
+        "state": "England"
+    },
+    {
+        "city": "Johnstone",
+        "state": "Scotland"
+    },
+    {
+        "city": "Jarrow",
+        "state": "England"
+    },
+    {
+        "city": "Islington",
+        "state": "England"
+    },
+    {
+        "city": "Isleworth",
+        "state": "England"
+    },
+    {
+        "city": "Irvine",
+        "state": "England"
+    },
+    {
+        "city": "Coity",
+        "state": "Wales"
+    },
+    {
+        "city": "Cobham",
+        "state": "England"
+    },
+    {
+        "city": "Coatbridge",
+        "state": "Scotland"
+    },
+    {
+        "city": "Coalville",
+        "state": "England"
+    },
+    {
+        "city": "Clydebank",
+        "state": "Scotland"
+    },
+    {
+        "city": "Clydach",
+        "state": "Wales"
+    },
+    {
+        "city": "Clitheroe",
+        "state": "England"
+    },
+    {
+        "city": "Clevedon",
+        "state": "England"
+    },
+    {
+        "city": "Cleethorpes",
+        "state": "England"
+    },
+    {
+        "city": "Cleckheaton",
+        "state": "England"
+    },
+    {
+        "city": "Clacton-on-Sea",
+        "state": "England"
+    },
+    {
+        "city": "Cirencester",
+        "state": "England"
+    },
+    {
+        "city": "Christchurch",
+        "state": "England"
+    },
+    {
+        "city": "Chorley",
+        "state": "England"
+    },
+    {
+        "city": "Chislehurst",
+        "state": "England"
+    },
+    {
+        "city": "Chipping Sodbury",
+        "state": "England"
+    },
+    {
+        "city": "Chippenham",
+        "state": "England"
+    },
+    {
+        "city": "Chichester",
+        "state": "England"
+    },
+    {
+        "city": "Chester-le-Street",
+        "state": "England"
+    },
+    {
+        "city": "Chesterfield",
+        "state": "England"
+    },
+    {
+        "city": "Chester",
+        "state": "England"
+    },
+    {
+        "city": "Chessington",
+        "state": "England"
+    },
+    {
+        "city": "Cheshunt",
+        "state": "England"
+    },
+    {
+        "city": "Chesham",
+        "state": "England"
+    },
+    {
+        "city": "Cheltenham",
+        "state": "England"
+    },
+    {
+        "city": "Chelsea",
+        "state": "England"
+    },
+    {
+        "city": "Chelmsford",
+        "state": "England"
+    },
+    {
+        "city": "Cheadle Hulme",
+        "state": "England"
+    },
+    {
+        "city": "Chatham",
+        "state": "England"
+    },
+    {
+        "city": "Chapletown",
+        "state": "England"
+    },
+    {
+        "city": "Chalfont Saint Peter",
+        "state": "England"
+    },
+    {
+        "city": "Caterham",
+        "state": "England"
+    },
+    {
+        "city": "Castlereagh",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Castleford",
+        "state": "England"
+    },
+    {
+        "city": "Carshalton",
+        "state": "England"
+    },
+    {
+        "city": "Carrickfergus",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Carmarthen",
+        "state": "Wales"
+    },
+    {
+        "city": "Carlisle",
+        "state": "England"
+    },
+    {
+        "city": "Cardiff",
+        "state": "Wales"
+    },
+    {
+        "city": "Canterbury",
+        "state": "England"
+    },
+    {
+        "city": "Cannock",
+        "state": "England"
+    },
+    {
+        "city": "Cambridge",
+        "state": "England"
+    },
+    {
+        "city": "Camborne",
+        "state": "England"
+    },
+    {
+        "city": "Camberley",
+        "state": "England"
+    },
+    {
+        "city": "Caerphilly",
+        "state": "Wales"
+    },
+    {
+        "city": "Buxton",
+        "state": "England"
+    },
+    {
+        "city": "Bushey",
+        "state": "England"
+    },
+    {
+        "city": "Bury St Edmunds",
+        "state": "England"
+    },
+    {
+        "city": "Bury",
+        "state": "England"
+    },
+    {
+        "city": "Burton upon Trent",
+        "state": "England"
+    },
+    {
+        "city": "Burntwood",
+        "state": "England"
+    },
+    {
+        "city": "Burnley",
+        "state": "England"
+    },
+    {
+        "city": "Burnham-on-Sea",
+        "state": "England"
+    },
+    {
+        "city": "Burgess Hill",
+        "state": "England"
+    },
+    {
+        "city": "Buckley",
+        "state": "Wales"
+    },
+    {
+        "city": "Buckhaven",
+        "state": "Scotland"
+    },
+    {
+        "city": "Brymbo",
+        "state": "Wales"
+    },
+    {
+        "city": "Brownhills",
+        "state": "England"
+    },
+    {
+        "city": "Bromsgrove",
+        "state": "England"
+    },
+    {
+        "city": "Broadstairs",
+        "state": "England"
+    },
+    {
+        "city": "Brixham",
+        "state": "England"
+    },
+    {
+        "city": "Briton Ferry",
+        "state": "Wales"
+    },
+    {
+        "city": "Bristol",
+        "state": "England"
+    },
+    {
+        "city": "Brighton",
+        "state": "England"
+    },
+    {
+        "city": "Brighouse",
+        "state": "England"
+    },
+    {
+        "city": "Brierley Hill",
+        "state": "England"
+    },
+    {
+        "city": "Bridlington",
+        "state": "England"
+    },
+    {
+        "city": "Bridgwater",
+        "state": "England"
+    },
+    {
+        "city": "Bridgend",
+        "state": "Wales"
+    },
+    {
+        "city": "Brentwood",
+        "state": "England"
+    },
+    {
+        "city": "Bredbury",
+        "state": "England"
+    },
+    {
+        "city": "Bramhall",
+        "state": "England"
+    },
+    {
+        "city": "Braintree",
+        "state": "England"
+    },
+    {
+        "city": "Bradford",
+        "state": "England"
+    },
+    {
+        "city": "Bracknell",
+        "state": "England"
+    },
+    {
+        "city": "Bournemouth",
+        "state": "England"
+    },
+    {
+        "city": "Boston",
+        "state": "England"
+    },
+    {
+        "city": "Borehamwood",
+        "state": "England"
+    },
+    {
+        "city": "Bootle",
+        "state": "England"
+    },
+    {
+        "city": "Bolton",
+        "state": "England"
+    },
+    {
+        "city": "Bognor Regis",
+        "state": "England"
+    },
+    {
+        "city": "Blyth",
+        "state": "England"
+    },
+    {
+        "city": "Bloxwich",
+        "state": "England"
+    },
+    {
+        "city": "Bletchley",
+        "state": "England"
+    },
+    {
+        "city": "Blackpool",
+        "state": "England"
+    },
+    {
+        "city": "Blackburn",
+        "state": "England"
+    },
+    {
+        "city": "Bishopstoke",
+        "state": "England"
+    },
+    {
+        "city": "Bishops Stortford",
+        "state": "England"
+    },
+    {
+        "city": "Bishopbriggs",
+        "state": "Scotland"
+    },
+    {
+        "city": "Bishop Auckland",
+        "state": "England"
+    },
+    {
+        "city": "Birmingham",
+        "state": "England"
+    },
+    {
+        "city": "Birkenhead",
+        "state": "England"
+    },
+    {
+        "city": "Bingley",
+        "state": "England"
+    },
+    {
+        "city": "Billingham",
+        "state": "England"
+    },
+    {
+        "city": "Billericay",
+        "state": "England"
+    },
+    {
+        "city": "Biggleswade",
+        "state": "England"
+    },
+    {
+        "city": "Bideford",
+        "state": "England"
+    },
+    {
+        "city": "Biddulph",
+        "state": "England"
+    },
+    {
+        "city": "Bicester",
+        "state": "England"
+    },
+    {
+        "city": "Bexley",
+        "state": "England"
+    },
+    {
+        "city": "Bexhill-on-Sea",
+        "state": "England"
+    },
+    {
+        "city": "Beverley",
+        "state": "England"
+    },
+    {
+        "city": "Berwick-Upon-Tweed",
+        "state": "England"
+    },
+    {
+        "city": "Berkhamsted",
+        "state": "England"
+    },
+    {
+        "city": "Bentley",
+        "state": "England"
+    },
+    {
+        "city": "Belper",
+        "state": "England"
+    },
+    {
+        "city": "Bellshill",
+        "state": "Scotland"
+    },
+    {
+        "city": "Belfast",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Bedworth",
+        "state": "England"
+    },
+    {
+        "city": "Bedlington",
+        "state": "England"
+    },
+    {
+        "city": "Bedford",
+        "state": "England"
+    },
+    {
+        "city": "Beckenham",
+        "state": "England"
+    },
+    {
+        "city": "Bebington",
+        "state": "England"
+    },
+    {
+        "city": "Bearsden",
+        "state": "Scotland"
+    },
+    {
+        "city": "Batley",
+        "state": "England"
+    },
+    {
+        "city": "Bathgate",
+        "state": "Scotland"
+    },
+    {
+        "city": "Bath",
+        "state": "England"
+    },
+    {
+        "city": "Basingstoke",
+        "state": "England"
+    },
+    {
+        "city": "Basildon",
+        "state": "England"
+    },
+    {
+        "city": "Barry",
+        "state": "Wales"
+    },
+    {
+        "city": "Barrow in Furness",
+        "state": "England"
+    },
+    {
+        "city": "Barrhead",
+        "state": "Scotland"
+    },
+    {
+        "city": "Barnstaple",
+        "state": "England"
+    },
+    {
+        "city": "Barnsley",
+        "state": "England"
+    },
+    {
+        "city": "Barnet",
+        "state": "England"
+    },
+    {
+        "city": "Barking",
+        "state": "England"
+    },
+    {
+        "city": "Banstead",
+        "state": "England"
+    },
+    {
+        "city": "Bangor",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Bangor",
+        "state": "Wales"
+    },
+    {
+        "city": "Banbury",
+        "state": "England"
+    },
+    {
+        "city": "Banbridge",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Ballymena",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Baildon",
+        "state": "England"
+    },
+    {
+        "city": "Ayr",
+        "state": "Scotland"
+    },
+    {
+        "city": "Aylesbury",
+        "state": "England"
+    },
+    {
+        "city": "Atherton",
+        "state": "England"
+    },
+    {
+        "city": "Ashton-under-Lyne",
+        "state": "England"
+    },
+    {
+        "city": "Ashton in Makerfield",
+        "state": "England"
+    },
+    {
+        "city": "Ashford",
+        "state": "England"
+    },
+    {
+        "city": "Ascot",
+        "state": "England"
+    },
+    {
+        "city": "Arnold",
+        "state": "England"
+    },
+    {
+        "city": "Arbroath",
+        "state": "Scotland"
+    },
+    {
+        "city": "Antrim",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Andover",
+        "state": "England"
+    },
+    {
+        "city": "Amersham",
+        "state": "England"
+    },
+    {
+        "city": "Altrincham",
+        "state": "England"
+    },
+    {
+        "city": "Alton",
+        "state": "England"
+    },
+    {
+        "city": "Alloa",
+        "state": "Scotland"
+    },
+    {
+        "city": "Alfreton",
+        "state": "England"
+    },
+    {
+        "city": "Aldridge",
+        "state": "England"
+    },
+    {
+        "city": "Aldershot",
+        "state": "England"
+    },
+    {
+        "city": "Airdrie",
+        "state": "Scotland"
+    },
+    {
+        "city": "Acton",
+        "state": "England"
+    },
+    {
+        "city": "Acocks Green",
+        "state": "England"
+    },
+    {
+        "city": "Accrington",
+        "state": "England"
+    },
+    {
+        "city": "Abingdon",
+        "state": "England"
+    },
+    {
+        "city": "Aberystwyth",
+        "state": "Wales"
+    },
+    {
+        "city": "Abergele",
+        "state": "Wales"
+    },
+    {
+        "city": "Aberdeen",
+        "state": "Scotland"
+    },
+    {
+        "city": "Aberdare",
+        "state": "Wales"
+    },
+    {
+        "city": "Crosby",
+        "state": "England"
+    },
+    {
+        "city": "Blackwood",
+        "state": "Wales"
+    },
+    {
+        "city": "Neston",
+        "state": "England"
+    },
+    {
+        "city": "Camden Town",
+        "state": "England"
+    },
+    {
+        "city": "Telford",
+        "state": "England"
+    },
+    {
+        "city": "Craigavon",
+        "state": "Northern Ireland"
+    },
+    {
+        "city": "Bayswater",
+        "state": "England"
+    },
+    {
+        "city": "Yateley",
+        "state": "England"
+    },
+    {
+        "city": "Bowthorpe",
+        "state": "England"
+    },
+    {
+        "city": "Hedge End",
+        "state": "England"
+    },
+    {
+        "city": "Erskine",
+        "state": "Scotland"
+    },
+    {
+        "city": "Hale",
+        "state": "England"
+    },
+    {
+        "city": "Amersham on the Hill",
+        "state": "England"
+    },
+    {
+        "city": "Battersea",
+        "state": "England"
+    },
+    {
+        "city": "South Croydon",
+        "state": "England"
+    },
+    {
+        "city": "Hornchurch",
+        "state": "England"
+    },
+    {
+        "city": "Surbiton",
+        "state": "England"
+    },
+    {
+        "city": "Ewell",
+        "state": "England"
+    },
+    {
+        "city": "Becontree",
+        "state": "England"
+    },
+    {
+        "city": "Brixton",
+        "state": "England"
+    },
+    {
+        "city": "Bethnal Green",
+        "state": "England"
+    },
+    {
+        "city": "Failsworth",
+        "state": "England"
+    },
+    {
+        "city": "Radcliffe",
+        "state": "England"
+    },
+    {
+        "city": "Heywood",
+        "state": "England"
+    },
+    {
+        "city": "Longsight",
+        "state": "England"
+    },
+    {
+        "city": "Heavitree",
+        "state": "England"
+    },
+    {
+        "city": "Ferndown",
+        "state": "England"
+    },
+    {
+        "city": "Canary Wharf",
+        "state": "England"
+    },
+    {
+        "city": "Lytham St Annes",
+        "state": "England"
+    },
+    {
+        "city": "Hadley Wood",
+        "state": "England"
+    },
+    {
+        "city": "Chapel Allerton",
+        "state": "England"
+    },
+    {
+        "city": "Blackheath",
+        "state": "England"
+    },
+    {
+        "city": "Kempston Hardwick",
+        "state": "England"
+    },
+    {
+        "city": "Mendip",
+        "state": "England"
+    },
+    {
+        "city": "Lower Earley",
+        "state": "England"
+    },
+    {
+        "city": "Bartley Green",
+        "state": "England"
+    },
+    {
+        "city": "Earlsfield",
+        "state": "England"
+    },
+    {
+        "city": "Letchworth Garden City",
+        "state": "England"
+    },
+    {
+        "city": "Shirley",
+        "state": "England"
+    },
+    {
+        "city": "Stanley",
+        "state": "England"
+    },
+    {
+        "city": "Rossendale",
+        "state": "England"
+    },
+    {
+        "city": "Thornton-Cleveleys",
+        "state": "England"
+    },
+    {
+        "city": "Deeside",
+        "state": "Wales"
+    },
+    {
+        "city": "High Peak",
+        "state": "England"
+    },
+    {
+        "city": "Hayling Island",
+        "state": "England"
+    },
+    {
+        "city": "Isle of Lewis",
+        "state": "Scotland"
+    },
+    {
+        "city": "Shetland",
+        "state": "Scotland"
+    },
+    {
+        "city": "Orkney",
+        "state": "Scotland"
+    },
+    {
+        "city": "Holloway",
+        "state": "England"
+    },
+    {
+        "city": "Harringay",
+        "state": "England"
+    }
+]

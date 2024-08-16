@@ -1,0 +1,2246 @@
+[
+    {
+        "city": "Gustavo A. Madero",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "San Fernando",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Zumpango",
+        "state": "México"
+    },
+    {
+        "city": "Zumpango del Río",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Zacualtipán",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Zacatlán",
+        "state": "Puebla"
+    },
+    {
+        "city": "Zacatepec",
+        "state": "Morelos"
+    },
+    {
+        "city": "Yecapixtla",
+        "state": "Morelos"
+    },
+    {
+        "city": "Yautepec",
+        "state": "Morelos"
+    },
+    {
+        "city": "Xoxocotla",
+        "state": "Morelos"
+    },
+    {
+        "city": "Xonacatlán",
+        "state": "Morelos"
+    },
+    {
+        "city": "Xochitepec",
+        "state": "Morelos"
+    },
+    {
+        "city": "Xochimilco",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Xicotepec de Juárez",
+        "state": "Puebla"
+    },
+    {
+        "city": "Xico",
+        "state": "Veracruz"
+    },
+    {
+        "city": "San Miguel Xico Viejo",
+        "state": "México"
+    },
+    {
+        "city": "Álvaro Obregón",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Villahermosa",
+        "state": "Tabasco"
+    },
+    {
+        "city": "Gustavo A. Madero",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Villa Cuauhtémoc Otzolotepec",
+        "state": "México"
+    },
+    {
+        "city": "Veracruz",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Venustiano Carranza",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Valle Hermoso",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Valladolid",
+        "state": "Yucatán"
+    },
+    {
+        "city": "Uman",
+        "state": "Yucatán"
+    },
+    {
+        "city": "Tuxtla Gutiérrez",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Tuxpan de Rodríguez Cano",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Tultitlán",
+        "state": "México"
+    },
+    {
+        "city": "Tultepec",
+        "state": "México"
+    },
+    {
+        "city": "Tulancingo",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Tula de Allende",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Toluca",
+        "state": "México"
+    },
+    {
+        "city": "Tlazcalancingo",
+        "state": "Puebla"
+    },
+    {
+        "city": "Tlaquiltenango",
+        "state": "Morelos"
+    },
+    {
+        "city": "Tlapa de Comonfort",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Tlapacoyan",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Tlalpan",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Tlalnepantla",
+        "state": "México"
+    },
+    {
+        "city": "Tlahuac",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Tizimín",
+        "state": "Yucatán"
+    },
+    {
+        "city": "Tizayuca",
+        "state": "Morelos"
+    },
+    {
+        "city": "Tixtla de Guerrero",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Ticul",
+        "state": "Yucatán"
+    },
+    {
+        "city": "Santiago Tíanguistenco",
+        "state": "México"
+    },
+    {
+        "city": "Tezontepec de Aldama",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Teziutlan",
+        "state": "Puebla"
+    },
+    {
+        "city": "Texcoco de Mora",
+        "state": "México"
+    },
+    {
+        "city": "Tequixquiac",
+        "state": "México"
+    },
+    {
+        "city": "Tequisquiapan",
+        "state": "Querétaro"
+    },
+    {
+        "city": "Cuautitlán Izcalli",
+        "state": "México"
+    },
+    {
+        "city": "Tepoztlán",
+        "state": "Morelos"
+    },
+    {
+        "city": "Tepotzotlán",
+        "state": "México"
+    },
+    {
+        "city": "Tepeji de Ocampo",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Tepeaca",
+        "state": "Puebla"
+    },
+    {
+        "city": "Tepatlaxco de Hidalgo",
+        "state": "Puebla"
+    },
+    {
+        "city": "Teoloyucan",
+        "state": "México"
+    },
+    {
+        "city": "Tenosique de Pino Suárez",
+        "state": "Tabasco"
+    },
+    {
+        "city": "Tenango de Arista",
+        "state": "Morelos"
+    },
+    {
+        "city": "Temixco",
+        "state": "Morelos"
+    },
+    {
+        "city": "Temapache",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Teloloapan",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Tecax",
+        "state": "Yucatán"
+    },
+    {
+        "city": "Tehuacán",
+        "state": "Puebla"
+    },
+    {
+        "city": "Tecamachalco",
+        "state": "Puebla"
+    },
+    {
+        "city": "Teapa",
+        "state": "Tabasco"
+    },
+    {
+        "city": "Taxco de Alarcón",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Tapachula",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Tantoyuca",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Tampico",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Tamazunchale",
+        "state": "San Luis Potosí"
+    },
+    {
+        "city": "Santo Domingo Tehuantepec",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "Santiago Tuxtla",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Santiago Pinotepa Nacional",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "Santiago Tulantepec",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Moyotzingo",
+        "state": "Puebla"
+    },
+    {
+        "city": "Santa María Chimalhuacán",
+        "state": "México"
+    },
+    {
+        "city": "Santa Cruz Xoxocotlán",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "Tecamac de Felipe Villanueva",
+        "state": "Morelos"
+    },
+    {
+        "city": "Chiautempan",
+        "state": "Tlaxcala"
+    },
+    {
+        "city": "San Salvador El Seco",
+        "state": "Puebla"
+    },
+    {
+        "city": "San Salvador Atenco",
+        "state": "México"
+    },
+    {
+        "city": "San Pablo de las Salinas",
+        "state": "México"
+    },
+    {
+        "city": "San Pablo Autopan",
+        "state": "Morelos"
+    },
+    {
+        "city": "San Miguel Zinacantepec",
+        "state": "México"
+    },
+    {
+        "city": "Coatlinchán",
+        "state": "México"
+    },
+    {
+        "city": "San Mateo Atenco",
+        "state": "Morelos"
+    },
+    {
+        "city": "San Martin Texmelucan de Labastida",
+        "state": "Puebla"
+    },
+    {
+        "city": "Teolocholco",
+        "state": "Tlaxcala"
+    },
+    {
+        "city": "Teotihuacán de Arista",
+        "state": "Morelos"
+    },
+    {
+        "city": "San Juan del Río",
+        "state": "Querétaro"
+    },
+    {
+        "city": "Tuxtepec",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "San Francisco Acuautla",
+        "state": "México"
+    },
+    {
+        "city": "Sanctorum",
+        "state": "Puebla"
+    },
+    {
+        "city": "San Cristóbal de las Casas",
+        "state": "Chiapas"
+    },
+    {
+        "city": "San Andres Tuxtla",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Salina Cruz",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "Río Verde",
+        "state": "San Luis Potosí"
+    },
+    {
+        "city": "Río Bravo",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Río Blanco",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Reynosa",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Puerto Escondido",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "Puente de Ixtla",
+        "state": "Morelos"
+    },
+    {
+        "city": "Puebla",
+        "state": "Puebla"
+    },
+    {
+        "city": "Progreso de Alvaro Obregon",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Progreso de Castro",
+        "state": "Yucatán"
+    },
+    {
+        "city": "Poza Rica de Hidalgo",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Polanco",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Playa del Carmen",
+        "state": "Quintana Roo"
+    },
+    {
+        "city": "Pijijiapan",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Peto",
+        "state": "Yucatán"
+    },
+    {
+        "city": "Perote",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Paraiso",
+        "state": "Tabasco"
+    },
+    {
+        "city": "Papantla de Olarte",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Pánuco",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Palmarito Tochapán",
+        "state": "Puebla"
+    },
+    {
+        "city": "Palenque",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Pachuca de Soto",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Ozumba de Alzate",
+        "state": "México"
+    },
+    {
+        "city": "Oxkutzkab",
+        "state": "Yucatán"
+    },
+    {
+        "city": "Orizaba",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Ometepec",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Ocozocoautla de Espinosa",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Ocoyoacac",
+        "state": "Morelos"
+    },
+    {
+        "city": "Ocosingo",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Oaxaca de Juárez",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "Nuevo Laredo",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Nogales",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Nicolás Romero",
+        "state": "México"
+    },
+    {
+        "city": "Naucalpan de Juárez",
+        "state": "México"
+    },
+    {
+        "city": "Naranjos",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Villa Nanchital",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Motul",
+        "state": "Yucatán"
+    },
+    {
+        "city": "Motozintla",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Montemorelos",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Santiago Momoxpan",
+        "state": "Puebla"
+    },
+    {
+        "city": "Mixquiahuala de Juarez",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Misantla",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Miramar",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Minatitlan",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Milpa Alta",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Miahuatlán de Porfirio Díaz",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "Metepec",
+        "state": "Morelos"
+    },
+    {
+        "city": "Mérida",
+        "state": "Yucatán"
+    },
+    {
+        "city": "Matías Romero",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "Heroica Matamoros",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Martínez de la Torre",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Mapastepec",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Malinaltepec",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Magdalena Contreras",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Macuspana",
+        "state": "Tabasco"
+    },
+    {
+        "city": "Reyes Acozac",
+        "state": "Morelos"
+    },
+    {
+        "city": "Los Reyes La Paz",
+        "state": "México"
+    },
+    {
+        "city": "Linares",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Lerma de Villada",
+        "state": "Morelos"
+    },
+    {
+        "city": "Lerdo de Tejada",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Las Margaritas",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Las Choapas",
+        "state": "Veracruz"
+    },
+    {
+        "city": "La Isla",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Kanasín",
+        "state": "Yucatán"
+    },
+    {
+        "city": "Juchitán de Zaragoza",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "Jojutla",
+        "state": "Morelos"
+    },
+    {
+        "city": "Jiutepec",
+        "state": "Morelos"
+    },
+    {
+        "city": "Jalpa de Méndez",
+        "state": "Tabasco"
+    },
+    {
+        "city": "Xalapa de Enríquez",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Izúcar de Matamoros",
+        "state": "Puebla"
+    },
+    {
+        "city": "San Jerónimo Ixtepec",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "Ixtapan de la Sal",
+        "state": "México"
+    },
+    {
+        "city": "Ixtapaluca",
+        "state": "México"
+    },
+    {
+        "city": "Iztapalapa",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Ixtac Zoquitlán",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Iztacalco",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Ixmiquilpan",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Iguala de la Independencia",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Hunucmá",
+        "state": "Yucatán"
+    },
+    {
+        "city": "Huixtla",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Huitzuco de los Figueroa",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Huimanguillo",
+        "state": "Tabasco"
+    },
+    {
+        "city": "Huejutla de Reyes",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Huejotzingo",
+        "state": "Puebla"
+    },
+    {
+        "city": "Huauchinango",
+        "state": "Puebla"
+    },
+    {
+        "city": "Huatusco de Chicuellar",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Ciudad de Huajuapan de León",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "Frontera Comalapa",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Frontera",
+        "state": "Tabasco"
+    },
+    {
+        "city": "Fortín de las Flores",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Felipe Carrillo Puerto",
+        "state": "Quintana Roo"
+    },
+    {
+        "city": "Escárcega",
+        "state": "Campeche"
+    },
+    {
+        "city": "Emiliano Zapata",
+        "state": "Morelos"
+    },
+    {
+        "city": "Emiliano Zapata",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Ciudad Mante",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Ecatepec",
+        "state": "México"
+    },
+    {
+        "city": "Cunduacán",
+        "state": "Tabasco"
+    },
+    {
+        "city": "Cuernavaca",
+        "state": "Morelos"
+    },
+    {
+        "city": "Cuautlancingo",
+        "state": "Puebla"
+    },
+    {
+        "city": "Cuautla Morelos",
+        "state": "Morelos"
+    },
+    {
+        "city": "Cuautitlán",
+        "state": "México"
+    },
+    {
+        "city": "Cuautepec de Hinojosa",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Cuajimalpa",
+        "state": "Mexico City"
+    },
+    {
+        "city": "San Miguel de Cozumel",
+        "state": "Quintana Roo"
+    },
+    {
+        "city": "Coyotepec",
+        "state": "Morelos"
+    },
+    {
+        "city": "Coyoacán",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Cosoleacaque",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Cosamaloapan de Carpio",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Córdoba",
+        "state": "Veracruz"
+    },
+    {
+        "city": "San Bernardino Contla",
+        "state": "Tlaxcala"
+    },
+    {
+        "city": "Comitán",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Comalcalco",
+        "state": "Tabasco"
+    },
+    {
+        "city": "Coatzintla",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Coatzacoalcos",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Coatepec",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Coacalco",
+        "state": "México"
+    },
+    {
+        "city": "Ciudad Victoria",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Ciudad Valles",
+        "state": "San Luis Potosí"
+    },
+    {
+        "city": "Ciudad Serdán",
+        "state": "Puebla"
+    },
+    {
+        "city": "Ciudad Sahagun",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Ciudad Nezahualcoyotl",
+        "state": "México"
+    },
+    {
+        "city": "Ciudad Miguel Alemán",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Ciudad Mendoza",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Ciudad Madero",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Ciudad Fernández",
+        "state": "San Luis Potosí"
+    },
+    {
+        "city": "Mexico City",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Ciudad del Carmen",
+        "state": "Campeche"
+    },
+    {
+        "city": "Cintalapa de Figueroa",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Cholula",
+        "state": "Puebla"
+    },
+    {
+        "city": "Chilpancingo de los Bravos",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Chilapa de Alvarez",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Chignahuapan",
+        "state": "Puebla"
+    },
+    {
+        "city": "Chiconcuac",
+        "state": "México"
+    },
+    {
+        "city": "San Vicente Chicoloapan",
+        "state": "México"
+    },
+    {
+        "city": "Chichén-Itzá",
+        "state": "Yucatán"
+    },
+    {
+        "city": "Chiautla",
+        "state": "México"
+    },
+    {
+        "city": "Chiapa de Corzo",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Chetumal",
+        "state": "Quintana Roo"
+    },
+    {
+        "city": "Champotón",
+        "state": "Campeche"
+    },
+    {
+        "city": "Chalco de Díaz Covarrubias",
+        "state": "México"
+    },
+    {
+        "city": "Cerro Azul",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Catemaco",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Carlos A. Carrillo",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Cardenas",
+        "state": "San Luis Potosí"
+    },
+    {
+        "city": "Cárdenas",
+        "state": "Tabasco"
+    },
+    {
+        "city": "Capulhuac",
+        "state": "Morelos"
+    },
+    {
+        "city": "Cancún",
+        "state": "Quintana Roo"
+    },
+    {
+        "city": "Campeche",
+        "state": "Campeche"
+    },
+    {
+        "city": "Calpulalpan",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Cadereyta",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Berriozábal",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Banderilla",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Azcapotzalco",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Axochiapan",
+        "state": "Morelos"
+    },
+    {
+        "city": "Atlixco",
+        "state": "Puebla"
+    },
+    {
+        "city": "Atlacomulco",
+        "state": "México"
+    },
+    {
+        "city": "Ciudad López Mateos",
+        "state": "México"
+    },
+    {
+        "city": "Apizaco",
+        "state": "Tlaxcala"
+    },
+    {
+        "city": "Apan",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Amozoc de Mota",
+        "state": "Puebla"
+    },
+    {
+        "city": "Amecameca",
+        "state": "México"
+    },
+    {
+        "city": "Heroica Alvarado",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Altotonga",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Altepexi",
+        "state": "Puebla"
+    },
+    {
+        "city": "Altamira",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Allende",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Álamo",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Ajalpan",
+        "state": "Puebla"
+    },
+    {
+        "city": "Agua Dulce",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Actopan",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Acayucan",
+        "state": "Veracruz"
+    },
+    {
+        "city": "Acatzingo de Hidalgo",
+        "state": "Puebla"
+    },
+    {
+        "city": "Acatlán de Osorio",
+        "state": "Puebla"
+    },
+    {
+        "city": "Acapulco de Juárez",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Acajete",
+        "state": "Puebla"
+    },
+    {
+        "city": "San Antonio de la Cal",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "Hidalgo",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Río de Teapa",
+        "state": "Tabasco"
+    },
+    {
+        "city": "Huamantla",
+        "state": "Tlaxcala"
+    },
+    {
+        "city": "Zacatelco",
+        "state": "Tlaxcala"
+    },
+    {
+        "city": "Tlaxcala de Xicohtencatl",
+        "state": "Tlaxcala"
+    },
+    {
+        "city": "Papalotla",
+        "state": "Tlaxcala"
+    },
+    {
+        "city": "Vicente Guerrero",
+        "state": "Tlaxcala"
+    },
+    {
+        "city": "Tonalá",
+        "state": "Chiapas"
+    },
+    {
+        "city": "Arriaga",
+        "state": "Chiapas"
+    },
+    {
+        "city": "San Andrés Cholula",
+        "state": "Puebla"
+    },
+    {
+        "city": "Tampico",
+        "state": "Tamaulipas"
+    },
+    {
+        "city": "Alto Lucero",
+        "state": "Veracruz"
+    },
+    {
+        "city": "San Mateo Otzacatipan",
+        "state": "Morelos"
+    },
+    {
+        "city": "Santa María Totoltepec",
+        "state": "México"
+    },
+    {
+        "city": "San Lorenzo Acopilco",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Benito Juarez",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Venustiano Carranza",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Miguel Hidalgo",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Cuauhtémoc",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Huixquilucan",
+        "state": "México"
+    },
+    {
+        "city": "Melchor Ocampo",
+        "state": "México"
+    },
+    {
+        "city": "Huilango",
+        "state": "México"
+    },
+    {
+        "city": "Santiago Teyahualco",
+        "state": "México"
+    },
+    {
+        "city": "Ojo de Agua",
+        "state": "México"
+    },
+    {
+        "city": "Buenavista",
+        "state": "México"
+    },
+    {
+        "city": "Miguel Alemán (La Doce)",
+        "state": "Sonora"
+    },
+    {
+        "city": "Leyva Solano",
+        "state": "Sinaloa"
+    },
+    {
+        "city": "Cihuatlán",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Guadalupe Victoria",
+        "state": "Baja California"
+    },
+    {
+        "city": "Ixtapa-Zihuatanejo",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Zapotlanejo",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Zapotiltic",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Zapopan",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Zamora",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Zacoalco de Torres",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Zacatecas",
+        "state": "Zacatecas"
+    },
+    {
+        "city": "Zacapú",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Yuriria",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Yurécuaro",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Villagrán",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Ciudad Frontera",
+        "state": "Coahuila"
+    },
+    {
+        "city": "García",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Ciudad de Villa de Álvarez",
+        "state": "Colima"
+    },
+    {
+        "city": "Valle de Santiago",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Valle de Bravo",
+        "state": "México"
+    },
+    {
+        "city": "Uruapan",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Uriangato",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Tuxpan",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Torreon",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Tonalá",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Tlaquepaque",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Tlajomulco de Zúñiga",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Tijuana",
+        "state": "Baja California"
+    },
+    {
+        "city": "Tesistán",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Tequila",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Tepic",
+        "state": "Nayarit"
+    },
+    {
+        "city": "Tepatitlán de Morelos",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Tepalcatepec",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Teocaltiche",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Tejupilco de Hidalgo",
+        "state": "México"
+    },
+    {
+        "city": "Tecoman",
+        "state": "Colima"
+    },
+    {
+        "city": "Tecate",
+        "state": "Baja California"
+    },
+    {
+        "city": "Tangancícuaro de Arista",
+        "state": "México"
+    },
+    {
+        "city": "Tamazula de Gordiano",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Tala",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Tacámbaro de Codallos",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Sombrerete",
+        "state": "Zacatecas"
+    },
+    {
+        "city": "Soledad Díez Gutiérrez",
+        "state": "San Luis Potosí"
+    },
+    {
+        "city": "Silao",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Sayula",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Santiago Papasquiaro",
+        "state": "Durango"
+    },
+    {
+        "city": "Santiago Ixcuintla",
+        "state": "Nayarit"
+    },
+    {
+        "city": "Santiago",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Santa Rosa Jauregui",
+        "state": "Querétaro"
+    },
+    {
+        "city": "Santa Catarina",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Santa Anita",
+        "state": "Jalisco"
+    },
+    {
+        "city": "San Sebastián el Grande",
+        "state": "Jalisco"
+    },
+    {
+        "city": "San Pedro",
+        "state": "Coahuila"
+    },
+    {
+        "city": "San Nicolás de los Garza",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "San Miguel el Alto",
+        "state": "Jalisco"
+    },
+    {
+        "city": "San Miguel de Papasquiaro",
+        "state": "Durango"
+    },
+    {
+        "city": "San Miguel de Allende",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "San Luis Río Colorado",
+        "state": "Sonora"
+    },
+    {
+        "city": "San Luis Potosí",
+        "state": "San Luis Potosí"
+    },
+    {
+        "city": "San Luis de la Paz",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "San Luis de la Paz",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Cabo San Lucas",
+        "state": "Baja California Sur"
+    },
+    {
+        "city": "San Juan de los Lagos",
+        "state": "Jalisco"
+    },
+    {
+        "city": "San José Iturbide",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "San José del Cabo",
+        "state": "Baja California Sur"
+    },
+    {
+        "city": "San Francisco del Rincón",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "San Felipe",
+        "state": "Baja California"
+    },
+    {
+        "city": "San Felipe",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "San Buenaventura",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Nicolás R Casillas",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Salvatierra",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Saltillo",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Salamanca",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Sahuayo de Morelos",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Sabinas Hidalgo",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Ciudad Sabinas",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Rosarito",
+        "state": "Baja California"
+    },
+    {
+        "city": "Romita",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Río Grande",
+        "state": "Zacatecas"
+    },
+    {
+        "city": "Rincón de Romos",
+        "state": "Aguascalientes"
+    },
+    {
+        "city": "Ramos Arizpe",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Santiago de Querétaro",
+        "state": "Querétaro"
+    },
+    {
+        "city": "Puruándiro",
+        "state": "México"
+    },
+    {
+        "city": "Puerto Vallarta",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Puerto Peñasco",
+        "state": "Sonora"
+    },
+    {
+        "city": "Piedras Negras",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Petatlán",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Pénjamo",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Pátzcuaro",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Parras de la Fuente",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Paracho de Verduzco",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Palau",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Ojinaga",
+        "state": "Chihuahua"
+    },
+    {
+        "city": "Ocotlán",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Nuevo México",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Nuevo Casas Grandes",
+        "state": "Chihuahua"
+    },
+    {
+        "city": "Nueva Rosita",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Nueva Italia de Ruiz",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Nochistlán",
+        "state": "Zacatecas"
+    },
+    {
+        "city": "Navolato",
+        "state": "Sinaloa"
+    },
+    {
+        "city": "Navojoa",
+        "state": "Sonora"
+    },
+    {
+        "city": "Nava",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Moroleón",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Morelia",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Monterrey",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Monclova",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Mexicali",
+        "state": "Baja California"
+    },
+    {
+        "city": "Pedro Meoqui",
+        "state": "Chihuahua"
+    },
+    {
+        "city": "Melchor Múzquiz",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Medina",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Mazatlán",
+        "state": "Sinaloa"
+    },
+    {
+        "city": "Matehuala",
+        "state": "San Luis Potosí"
+    },
+    {
+        "city": "Matamoros",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Marfil",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Maravatío",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Manzanillo",
+        "state": "Colima"
+    },
+    {
+        "city": "Rodolfo Sánchez Taboada",
+        "state": "Baja California"
+    },
+    {
+        "city": "Magdalena de Kino",
+        "state": "Sonora"
+    },
+    {
+        "city": "San Pedro Madera",
+        "state": "Chihuahua"
+    },
+    {
+        "city": "Los Mochis",
+        "state": "Sinaloa"
+    },
+    {
+        "city": "Loreto",
+        "state": "Zacatecas"
+    },
+    {
+        "city": "León",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Las Pintas de Arriba",
+        "state": "Jalisco"
+    },
+    {
+        "city": "La Piedad Cavadas",
+        "state": "Michoacán"
+    },
+    {
+        "city": "La Paz",
+        "state": "Baja California Sur"
+    },
+    {
+        "city": "La Orilla",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Lagos de Moreno",
+        "state": "Jalisco"
+    },
+    {
+        "city": "La Cruz",
+        "state": "Sinaloa"
+    },
+    {
+        "city": "La Barca",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Santa Cruz de Juventino Rosas",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Jocotepec",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Jiquílpan de Juárez",
+        "state": "México"
+    },
+    {
+        "city": "Jiménez",
+        "state": "Chihuahua"
+    },
+    {
+        "city": "Jesús María",
+        "state": "Aguascalientes"
+    },
+    {
+        "city": "Jerez de García Salinas",
+        "state": "Zacatecas"
+    },
+    {
+        "city": "Jaral del Progreso",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Jamay",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Jalostotitlán",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Ixtlán del Río",
+        "state": "Nayarit"
+    },
+    {
+        "city": "Ixtapa",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Irapuato",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Huetamo de Núñez",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Huatabampo",
+        "state": "Sonora"
+    },
+    {
+        "city": "Hidalgo del Parral",
+        "state": "Chihuahua"
+    },
+    {
+        "city": "Heróica Zitácuaro",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Nogales",
+        "state": "Sonora"
+    },
+    {
+        "city": "Heroica Caborca",
+        "state": "Sonora"
+    },
+    {
+        "city": "Hermosillo",
+        "state": "Sonora"
+    },
+    {
+        "city": "Heroica Guaymas",
+        "state": "Sonora"
+    },
+    {
+        "city": "Guasave",
+        "state": "Sinaloa"
+    },
+    {
+        "city": "Guanajuato",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Guamúchil",
+        "state": "Sinaloa"
+    },
+    {
+        "city": "Guadalupe",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Guadalupe",
+        "state": "Zacatecas"
+    },
+    {
+        "city": "Guadalajara",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Gomez Palacio",
+        "state": "Durango"
+    },
+    {
+        "city": "Juan Jose Rios",
+        "state": "Sinaloa"
+    },
+    {
+        "city": "General Escobedo",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Garza García",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Fresnillo",
+        "state": "Zacatecas"
+    },
+    {
+        "city": "Escuinapa de Hidalgo",
+        "state": "Sinaloa"
+    },
+    {
+        "city": "Ensenada",
+        "state": "Baja California"
+    },
+    {
+        "city": "Encarnación de Díaz",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Empalme",
+        "state": "Sonora"
+    },
+    {
+        "city": "Pueblo Nuevo",
+        "state": "Durango"
+    },
+    {
+        "city": "El Salto",
+        "state": "Jalisco"
+    },
+    {
+        "city": "El Pueblito",
+        "state": "Querétaro"
+    },
+    {
+        "city": "El Grullo",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Victoria de Durango",
+        "state": "Durango"
+    },
+    {
+        "city": "Culiacán",
+        "state": "Sinaloa"
+    },
+    {
+        "city": "Cuauhtémoc",
+        "state": "Chihuahua"
+    },
+    {
+        "city": "Villa de Costa Rica",
+        "state": "Sinaloa"
+    },
+    {
+        "city": "Cortazar",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Compostela",
+        "state": "Nayarit"
+    },
+    {
+        "city": "Comonfort",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Colima",
+        "state": "Colima"
+    },
+    {
+        "city": "Ciudad Obregón",
+        "state": "Sonora"
+    },
+    {
+        "city": "Ciudad Lerdo",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Ciudad Juárez",
+        "state": "Chihuahua"
+    },
+    {
+        "city": "Ciudad Hidalgo",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Ciudad Guzmán",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Ciudad Delicias",
+        "state": "Chihuahua"
+    },
+    {
+        "city": "Ciudad Constitución",
+        "state": "Baja California Sur"
+    },
+    {
+        "city": "Ciudad Camargo",
+        "state": "Chihuahua"
+    },
+    {
+        "city": "Ciudad Anáhuac",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Ciudad Altamirano",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Ciudad Acuña",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Chihuahua",
+        "state": "Chihuahua"
+    },
+    {
+        "city": "Chapala",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Celaya",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Castaños",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Cananea",
+        "state": "Sonora"
+    },
+    {
+        "city": "Villa Juárez",
+        "state": "Sinaloa"
+    },
+    {
+        "city": "Calvillo",
+        "state": "Aguascalientes"
+    },
+    {
+        "city": "Víctor Rosales",
+        "state": "Zacatecas"
+    },
+    {
+        "city": "Autlán de Navarro",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Atoyac de Álvarez",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Atotonilco el Alto",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Armeria",
+        "state": "Colima"
+    },
+    {
+        "city": "Arcelia",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Arandas",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Apodaca",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Apatzingán",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Apaseo el Grande",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Apaseo el Alto",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Ameca",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Allende",
+        "state": "Coahuila"
+    },
+    {
+        "city": "Allende",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Aguascalientes",
+        "state": "Aguascalientes"
+    },
+    {
+        "city": "Agua Prieta",
+        "state": "Sonora"
+    },
+    {
+        "city": "Acaponeta",
+        "state": "Nayarit"
+    },
+    {
+        "city": "Acámbaro",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Abasolo",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Anáhuac",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Dolores Hidalgo Cuna de la Independencia Nacional",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Guacamayas",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Ciudad Lázaro Cárdenas",
+        "state": "Michoacán"
+    },
+    {
+        "city": "Colonia del Valle",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Colonia Lindavista",
+        "state": "México"
+    },
+    {
+        "city": "Colonia Nativitas",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Las Delicias",
+        "state": "Baja California"
+    },
+    {
+        "city": "San Pedro Garza Garcia",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Soledad de Graciano Sánchez",
+        "state": "San Luis Potosí"
+    },
+    {
+        "city": "Manzanillo",
+        "state": "Colima"
+    },
+    {
+        "city": "Naucalpan de Juárez",
+        "state": "México"
+    },
+    {
+        "city": "Hacienda Santa Fe",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Fuentes del Valle",
+        "state": "México"
+    },
+    {
+        "city": "San Salvador Tizatlalli",
+        "state": "México"
+    },
+    {
+        "city": "Jardines de la Silla (Jardines)",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "San Buenaventura",
+        "state": "México"
+    },
+    {
+        "city": "Colonia Santa Teresa",
+        "state": "México"
+    },
+    {
+        "city": "San Jerónimo Cuatro Vientos",
+        "state": "México"
+    },
+    {
+        "city": "San Martín Azcatepec",
+        "state": "México"
+    },
+    {
+        "city": "Fraccionamiento Real Palmas",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Pórticos de San Antonio",
+        "state": "Baja California"
+    },
+    {
+        "city": "San Isidro",
+        "state": "México"
+    },
+    {
+        "city": "Centro Familiar la Soledad",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "San José Guadalupe Otzacatipan",
+        "state": "México"
+    },
+    {
+        "city": "Las Pintitas",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Emiliano Zapata",
+        "state": "México"
+    },
+    {
+        "city": "San Antonio Tecómitl",
+        "state": "Mexico City"
+    },
+    {
+        "city": "Licenciado Benito Juárez (Campo Gobierno)",
+        "state": "Sinaloa"
+    },
+    {
+        "city": "Teotihuacán de Arista",
+        "state": "México"
+    },
+    {
+        "city": "Jesús del Monte",
+        "state": "México"
+    },
+    {
+        "city": "San Jorge Pueblo Nuevo",
+        "state": "México"
+    },
+    {
+        "city": "Manuel Ojinaga",
+        "state": "Chihuahua"
+    },
+    {
+        "city": "Terrazas del Valle",
+        "state": "Baja California"
+    },
+    {
+        "city": "La Ermita",
+        "state": "Guanajuato"
+    },
+    {
+        "city": "Lomas del Sur",
+        "state": "Jalisco"
+    },
+    {
+        "city": "Parque Industrial Ciudad Mitras",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Mitras Poniente",
+        "state": "Nuevo León"
+    },
+    {
+        "city": "Villa del Prado 2da Sección",
+        "state": "Baja California"
+    },
+    {
+        "city": "Tres de Mayo",
+        "state": "Morelos"
+    },
+    {
+        "city": "Don Antonio",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Heroica Ciudad de Tlaxiaco",
+        "state": "Oaxaca"
+    },
+    {
+        "city": "Ciudad de Huitzuco",
+        "state": "Guerrero"
+    },
+    {
+        "city": "Casa Blanca",
+        "state": "Puebla"
+    },
+    {
+        "city": "La Providencia Siglo XXI",
+        "state": "Hidalgo"
+    },
+    {
+        "city": "Ampliación San Mateo (Colonia Solidaridad)",
+        "state": "México"
+    },
+    {
+        "city": "Fraccionamiento Ciudad Olmeca",
+        "state": "Veracruz"
+    },
+    {
+        "city": "San Rafael Tlanalapan",
+        "state": "Puebla"
+    },
+    {
+        "city": "Tecámac de Felipe Villanueva",
+        "state": "México"
+    },
+    {
+        "city": "Venceremos",
+        "state": "Querétaro"
+    },
+    {
+        "city": "Alborada Jaltenco",
+        "state": "México"
+    },
+    {
+        "city": "Crucecita",
+        "state": "Oaxaca"
+    }
+]
