@@ -1,17 +1,23 @@
 <?php
-namespace App\Console\Commands;
+
+namespace App\Console\Commands\User;
 
 use App\Models;
 use Illuminate\Console\Command;
-use JWTAuth;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
-class GenerateUserToken extends Command {
+/**
+ * @class GenerateToken
+ * @package Console/Commands/User
+ * @project ChalkySticks API
+ */
+class GenerateToken extends Command {
 	/**
 	 * The name and signature of the console command.
 	 *
 	 * @var string
 	 */
-	protected $signature = 'user:generateToken';
+	protected $signature = 'user:token {id?}';
 
 	/**
 	 * The console command description.
@@ -26,7 +32,8 @@ class GenerateUserToken extends Command {
 	 * @return mixed
 	 */
 	public function handle() {
-		$user = Models\User::find(1);
+		$id = $this->argument('id');
+		$user = Models\User::find($id);
 
 		// No user available
 		if (!$user) {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Console;
+namespace App\Core\Console;
 
 /**
  * @class Log

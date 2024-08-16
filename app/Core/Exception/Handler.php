@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Exception;
+namespace App\Core\Exception;
 
 use Exception;
 use ReflectionFunction;

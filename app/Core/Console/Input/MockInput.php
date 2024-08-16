@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Console\Input;
+namespace App\Core\Console\Input;
 
 class MockInput extends \Symfony\Component\Console\Input\ArrayInput {
 	// Not implemented

@@ -2,13 +2,18 @@
 
 namespace App\Models;
 
+use App\Core\Data\DistanceModel;
+use App\Core\Data\Model;
 use App\Jobs;
 use Carbon\Carbon;
 use Config;
-use Core\Data\DistanceModel;
-use Core\Data\Model;
 use Queue;
 
+/**
+ * @class Beacon
+ * @package Models
+ * @project ChalkySticks API
+ */
 class Beacon extends Model {
 	use DistanceModel;
 

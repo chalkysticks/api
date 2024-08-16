@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Translation;
+namespace App\Core\Translation;
 
 use Illuminate\Translation\Translator as LaravelTranslator;
 

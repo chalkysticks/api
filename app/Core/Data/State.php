@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Data;
+namespace App\Core\Data;
 
 /**
  * @class State

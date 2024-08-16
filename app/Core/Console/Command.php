@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Console;
+namespace App\Core\Console;
 
 use Monolog\Logger;
 use Monolog\Formatter\LineFormatter;

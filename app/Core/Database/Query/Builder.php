@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Database\Query;
+namespace App\Core\Database\Query;
 
 /**
  * @class Builder

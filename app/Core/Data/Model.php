@@ -1,10 +1,10 @@
 <?php
 
-namespace Core\Data;
+namespace App\Core\Data;
 
 use Carbon\Carbon;
-use Core\Data\Collection;
-use Core\Database\Query\Builder as Builder;
+use App\Core\Data\Collection;
+use App\Core\Database\Query\Builder as Builder;
 use League\Fractal;
 use League\Fractal\Serializer;
 

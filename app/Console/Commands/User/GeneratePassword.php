@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Console\Commands;
+namespace App\Console\Commands\User;
 
 use Illuminate\Console\Command;
 
 /**
  * @class GeneratePassword
- * @package Console/Commands
+ * @package Console/Commands/User
  * @project ChalkySticks API
  */
 class GeneratePassword extends Command {
@@ -15,14 +15,14 @@ class GeneratePassword extends Command {
 	 *
 	 * @var string
 	 */
-	protected $signature = 'generate:password {--password=}';
+	protected $signature = 'user:password {password?}';
 
 	/**
 	 * The console command description.
 	 *
 	 * @var string
 	 */
-	protected $description = 'Creates a password using hash';
+	protected $description = 'Creates a user password using hash';
 
 	/**
 	 * Execute the console command.
@@ -30,7 +30,7 @@ class GeneratePassword extends Command {
 	 * @return mixed
 	 */
 	public function handle() {
-		$password = $this->option('password');
+		$password = $this->argument('password');
 		$hash = hash_password($password);
 
 		$this->line($hash);

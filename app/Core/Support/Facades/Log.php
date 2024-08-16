@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Support\Facades;
+namespace App\Core\Support\Facades;
 
 /**
  * @class Log

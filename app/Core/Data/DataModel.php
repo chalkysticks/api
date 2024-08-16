@@ -1,8 +1,8 @@
 <?php
 
-namespace Core\Data;
+namespace App\Core\Data;
 
-use Core\Exception\ApiException;
+use App\Core\Exception\ApiException;
 use League\Fractal;
 
 /**

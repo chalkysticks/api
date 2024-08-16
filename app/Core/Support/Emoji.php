@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Support;
+namespace App\Core\Support;
 
 /**
  * @class Emoji

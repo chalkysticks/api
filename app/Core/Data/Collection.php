@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Data;
+namespace App\Core\Data;
 
 /**
  * @class Collection
@@ -42,7 +42,7 @@ class Collection extends \Illuminate\Support\Collection {
 	 * @param string $value  Value to compare to column
 	 * @return
 	 */
-	public function firstWhere(string $key, string $value) {
-		return $this->findWhere($key, $value)->first();
+	public function firstWhere($key, $operator = null, $value = null) {
+		return $this->findWhere($key, $operator ?: $value)->first();
 	}
 }
