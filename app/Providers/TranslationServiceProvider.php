@@ -3,12 +3,13 @@
 namespace Core\Provider;
 
 use App;
+use App\Core\Translation\Translator;
 use Config;
 use Illuminate\Translation\TranslationServiceProvider as TSP;
 
 /**
- * @class Emoji
- * @package Core/Provider
+ * @class TranslationServiceProvider
+ * @package Providers
  * @project ChalkySticks API
  */
 class TranslationServiceProvider extends TSP {
@@ -22,7 +23,7 @@ class TranslationServiceProvider extends TSP {
 			$loader = $app['translation.loader'];
 			$locale = $app['config']['app.locale'];
 
-			$trans = new \Core\Translation\Translator($loader, $locale);
+			$trans = new Translator($loader, $locale);
 			$trans->loadJson($locale);
 			$trans->setFallback($app['config']['app.fallback_locale']);
 
