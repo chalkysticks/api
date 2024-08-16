@@ -21,25 +21,13 @@ return new class extends Migration {
 			$table->index(['user_id']);
 		});
 
-		Schema::create('tournamentspaymentoptions', function (Blueprint $table) {
-			$table->increments('id');
-			$table->integer('tournament_id');
-			$table->decimal('price', 10, 2)->default(0);
-			$table->string('currency');
-			$table->string('name');
-			$table->string('description');
-			$table->timestamps();
-
-			$table->index(['tournament_id']);
-		});
-
 		Schema::create('transactions', function (Blueprint $table) {
 			$table->increments('id');
-			$table->string('type');
+			$table->enum('type', ['digital-product', 'gamble', 'merchandise', 'chalkysticks-fees', 'tournament', 'other'])->default('other');
 			$table->integer('type_id');
 			$table->enum('status', ['payment', 'refund', 'cancelled']);
-			$table->integer('amount')->default(0);
-			$table->string('currency');
+			$table->decimal('amount', 8, 2)->default(0);
+			$table->enum('currency', ['CSX', 'USD'])->default('CSX');
 			$table->integer('user_id');
 			$table->string('user_name');
 			$table->string('user_email');
@@ -56,24 +44,6 @@ return new class extends Migration {
 			$table->index(['type', 'status']);
 			$table->unique(['type_id', 'user_id', 'status']);
 		});
-
-		DB::statement("
-            ALTER TABLE `tournaments`
-            ADD COLUMN `accept_payments` tinyint (1)  DEFAULT 0
-            AFTER `begins_at`
-        ");
-
-		DB::statement("
-            ALTER TABLE `tournaments`
-            ADD COLUMN `payoutaccount_id` int(11) unsigned null
-            AFTER `accept_payments`
-        ");
-
-		DB::statement("
-            ALTER TABLE `tournamentsentries`
-            ADD COLUMN `transaction_id` int(11) unsigned null
-            AFTER `rank`
-        ");
 	}
 
 	/**

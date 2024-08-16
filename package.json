@@ -8,6 +8,7 @@
 	"scripts": {
 		"build": "vite build",
 		"dev": "vite",
+		"migrate": "php artisan migrate",
 		"serve": "php artisan serve"
 	},
 	"type": "module"

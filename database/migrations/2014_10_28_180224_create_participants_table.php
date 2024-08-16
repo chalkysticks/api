@@ -15,7 +15,9 @@ return new class extends Migration {
 			$table->increments('id');
 			$table->integer('thread_id')->unsigned();
 			$table->integer('user_id')->unsigned();
-			$table->timestamp('last_read');
+			$table->timestamp('last_read')->nullable()
+				->default(DB::raw('CURRENT_TIMESTAMP'))
+				->onUpdate(DB::raw('CURRENT_TIMESTAMP'));
 			$table->timestamps();
 		});
 	}

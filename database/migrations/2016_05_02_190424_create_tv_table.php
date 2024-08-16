@@ -11,7 +11,7 @@ return new class extends Migration {
 	 * @return void
 	 */
 	public function up() {
-		Schema::create('tv_schedule', function (Blueprint $table) {
+		Schema::create('tvschedule', function (Blueprint $table) {
 			$table->increments('id');
 			$table->string('title')->nullable();
 			$table->string('description')->nullable();
@@ -24,7 +24,7 @@ return new class extends Migration {
 			$table->timestamps();
 		});
 
-		Schema::create('tv_settings', function (Blueprint $table) {
+		Schema::create('tvsettings', function (Blueprint $table) {
 			$table->string('key')->nullable();
 			$table->string('value')->nullable();
 
@@ -38,7 +38,7 @@ return new class extends Migration {
 	 * @return void
 	 */
 	public function down() {
-		Schema::drop('tv_schedule');
-		Schema::drop('tv_settings');
+		Schema::drop('tvschedule');
+		Schema::drop('tvsettings');
 	}
 };

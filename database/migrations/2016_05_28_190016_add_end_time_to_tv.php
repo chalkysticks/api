@@ -10,7 +10,7 @@ return new class extends Migration {
 	 * @return void
 	 */
 	public function up() {
-		Schema::table('tv_schedule', function ($table) {
+		Schema::table('tvschedule', function ($table) {
 			$table->integer('flags')->unsigned()->after('embed_url')->default(0);
 			$table->dateTime('end_air_at')->after('air_at')->nullable();
 		});

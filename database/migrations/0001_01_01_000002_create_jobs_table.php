@@ -10,13 +10,15 @@ return new class extends Migration {
 	 */
 	public function up(): void {
 		Schema::create('jobs', function (Blueprint $table) {
-			$table->id();
-			$table->string('queue')->index();
+			$table->bigIncrements('id');
+			$table->string('queue');
 			$table->longText('payload');
-			$table->unsignedTinyInteger('attempts');
+			$table->tinyInteger('attempts')->unsigned();
+			$table->tinyInteger('reserved')->unsigned();
 			$table->unsignedInteger('reserved_at')->nullable();
 			$table->unsignedInteger('available_at');
 			$table->unsignedInteger('created_at');
+			$table->index(['queue', 'reserved', 'reserved_at']);
 		});
 
 		Schema::create('job_batches', function (Blueprint $table) {

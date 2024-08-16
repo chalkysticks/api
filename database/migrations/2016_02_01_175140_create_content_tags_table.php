@@ -11,7 +11,7 @@ return new class extends Migration {
 	 * @return void
 	 */
 	public function up() {
-		Schema::create('content_tags', function (Blueprint $table) {
+		Schema::create('contenttags', function (Blueprint $table) {
 			$table->increments('id');
 			$table->integer('content_id')->unsigned();
 			$table->string('tag');
@@ -26,6 +26,6 @@ return new class extends Migration {
 	 * @return void
 	 */
 	public function down() {
-		Schema::drop('content_tags');
+		Schema::drop('contenttags');
 	}
 };
