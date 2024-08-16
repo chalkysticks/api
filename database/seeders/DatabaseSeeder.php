@@ -18,20 +18,18 @@ class DatabaseSeeder extends Seeder {
 		// 	'email' => 'test@example.com',
 		// ]);
 
+		// Order matters
 		$this->call(AccomplishmentsTableSeeder::class);
 		$this->call(BeaconsTableSeeder::class);
-		$this->call(BracketsTableSeeder::class);
 		$this->call(ContentTableSeeder::class);
 		$this->call(ContentTagsTableSeeder::class);
+		$this->call(UsersTableSeeder::class);
+		$this->call(NightsTableSeeder::class);
+		$this->call(MatchesTableSeeder::class);
 		$this->call(GamesTableSeeder::class);
 		$this->call(InningsTableSeeder::class);
-		$this->call(MatchesTableSeeder::class);
-		$this->call(NightsTableSeeder::class);
 		$this->call(TeamsPlayersTableSeeder::class);
 		$this->call(TeamsTableSeeder::class);
-		$this->call(TournamentsEntriesTableSeeder::class);
-		$this->call(TournamentsTableSeeder::class);
-		$this->call(UsersTableSeeder::class);
 		$this->call(UsersAccomplishmentsTableSeeder::class);
 		$this->call(UsersMediaTableSeeder::class);
 		$this->call(UsersMetaTableSeeder::class);

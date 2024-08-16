@@ -7,6 +7,8 @@
 	"private": true,
 	"scripts": {
 		"build": "vite build",
+		"db:seed": "php artisan db:seed",
+		"db:wipe": "yarn migrate:fresh && yarn db:seed",
 		"dev": "vite",
 		"migrate": "php artisan migrate",
 		"migrate:fresh": "php artisan migrate:fresh",

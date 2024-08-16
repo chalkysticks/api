@@ -19,7 +19,7 @@ return new class extends Migration {
 			$table->boolean('is_win')->default(false);
 			$table->boolean('is_loss')->default(false);
 			$table->timestamps();
-			$table->timestamp('ended_at');
+			$table->timestamp('ended_at')->nullable();
 
 			$table->index(['night_id', 'user1_id', 'user2_id']);
 		});

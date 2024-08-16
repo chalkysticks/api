@@ -19,7 +19,7 @@ return new class extends Migration {
 			$table->decimal('lat', 10, 6);
 			$table->decimal('lon', 10, 6);
 			$table->string('status', 20);
-			$table->string('permissions', 255);
+			$table->string('permissions', 255)->nullable();
 			$table->string('activation_key', 40);
 			$table->timestamp('email_verified_at')->nullable();
 			$table->rememberToken();

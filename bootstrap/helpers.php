@@ -13,7 +13,6 @@ function utf8ize($d) {
 	return $d;
 }
 
-
 /**
  * to_slug
  *
@@ -39,7 +38,6 @@ function to_slug($string) {
 function hash_password($string) {
 	return sha1('cs114-' . $string);
 }
-
 
 /**
  * purge
@@ -72,16 +70,10 @@ function purge($url) {
  * @param int $length
  * @return string
  */
-function str_random(int $length = 16): string {
-	$characters = "";
-	$charactersLength = strlen($characters);
-	$randomString = "";
-
-	for ($i = 0; $i < $length; $i++) {
-		$randomString .= $characters[rand(0, $charactersLength - 1)];
+if (!function_exists('str_random')) {
+	function str_random(int $length = 16) {
+		return substr(str_shuffle(str_repeat('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / 62))), 1, $length);
 	}
-
-	return $randomString;
 }
 
 

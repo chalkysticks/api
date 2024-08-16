@@ -38,20 +38,14 @@ class MatchesTableSeeder extends Seeder {
 		DB::table('matches')->insert([
 			'id' => 5,
 			'night_id' => 1,
-			'user1_id' => 9,
-			'user2_id' => 10
+			'user1_id' => 2,
+			'user2_id' => 3
 		]);
 		DB::table('matches')->insert([
 			'id' => 6,
 			'night_id' => 1,
-			'user1_id' => 11,
-			'user2_id' => 12
-		]);
-		DB::table('matches')->insert([
-			'id' => 7,
-			'night_id' => 1,
-			'user1_id' => 13,
-			'user2_id' => 14
+			'user1_id' => 1,
+			'user2_id' => 4
 		]);
 	}
 }

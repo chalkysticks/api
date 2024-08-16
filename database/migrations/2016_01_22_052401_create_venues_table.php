@@ -18,13 +18,13 @@ return new class extends Migration {
 			$table->string('address');
 			$table->string('city');
 			$table->string('state');
-			$table->string('zip');
-			$table->enum('type', ['bar', 'hall', 'hotel']);
-			$table->string('phone', 25);
+			$table->string('zip')->nullable();
+			$table->enum('type', ['bar', 'hall', 'hotel'])->default('bar');
+			$table->string('phone', 25)->nullable();
 			$table->decimal('lat', 10, 6);
 			$table->decimal('lon', 10, 6);
-			$table->text('description');
-			$table->string('notes');
+			$table->text('description')->default('');
+			$table->string('notes')->default('');
 			$table->timestamps();
 
 			$table->unique(['lat', 'lon']);

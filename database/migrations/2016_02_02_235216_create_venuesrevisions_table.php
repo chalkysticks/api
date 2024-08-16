@@ -15,8 +15,8 @@ return new class extends Migration {
 			$table->increments('id');
 			$table->integer('venue_id')->unsigned();
 			$table->integer('user_id')->unsigned();
-			$table->text('data');
-			$table->string('image_url');
+			$table->text('data')->default('');
+			$table->string('image_url')->nullable();
 			$table->timestamps();
 
 			$table->index(['venue_id', 'user_id']);

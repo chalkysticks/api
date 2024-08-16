@@ -12,12 +12,12 @@ class ContentTagsTableSeeder extends Seeder {
 	 * @return void
 	 */
 	public function run() {
-		DB::table('content_tags')->insert([
+		DB::table('contenttags')->insert([
 			'content_id' => 6,
 			'tag' => "pool-pad"
 		]);
 
-		DB::table('content_tags')->insert([
+		DB::table('contenttags')->insert([
 			'content_id' => 6,
 			'tag' => "diagram-9-ball"
 		]);

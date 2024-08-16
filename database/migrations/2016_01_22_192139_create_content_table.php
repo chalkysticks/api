@@ -14,7 +14,7 @@ return new class extends Migration {
 		Schema::create('content', function (Blueprint $table) {
 			$table->increments('id');
 			$table->string('title');
-			$table->string('thumbnail_url');
+			$table->string('thumbnail_url')->nullable();
 			$table->string('media_url');
 			$table->enum('media_type', ['image', 'video']);
 			$table->text('content');
