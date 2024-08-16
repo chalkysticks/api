@@ -37,5 +37,4 @@ class MessageReceived extends Event {
 		$this->user_ids = $user_ids;
 		$this->message = $message;
 	}
-
 }

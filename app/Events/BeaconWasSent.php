@@ -13,16 +13,18 @@ use Illuminate\Queue\SerializesModels;
 class BeaconWasSent extends Event {
 	use SerializesModels;
 
-	public $beacon;
+	/**
+	 * @var Models\Beacon
+	 */
+	public Models\Beacon $beacon;
 
 	/**
 	 * Create a new event instance.
 	 *
-	 * @param  Podcast  $beacon
+	 * @param Models\Beacon $beacon
 	 * @return void
 	 */
-	public function __construct(Models\Beacons $beacon) {
+	public function __construct(Models\Beacon $beacon) {
 		$this->beacon = $beacon;
 	}
-
 }

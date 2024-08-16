@@ -9,6 +9,7 @@
 		"build": "vite build",
 		"dev": "vite",
 		"migrate": "php artisan migrate",
+		"migrate:fresh": "php artisan migrate:fresh",
 		"serve": "php artisan serve"
 	},
 	"type": "module"
