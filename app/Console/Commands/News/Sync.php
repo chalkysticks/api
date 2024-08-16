@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Console\Commands\News;
 
 use App\Jobs;
@@ -7,6 +8,11 @@ use App\Models;
 use Illuminate\Console\Command;
 use Queue;
 
+/**
+ * @class Sync
+ * @package Console/Commands/News
+ * @project ChalkySticks API
+ */
 class Sync extends Command {
 	/**
 	 * The name and signature of the console command.

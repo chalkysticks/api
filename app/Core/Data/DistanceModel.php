@@ -138,7 +138,7 @@ trait DistanceModel {
 		}
 
 		// get lat long from google
-		$api_key = config('google.map_api_key');
+		$api_key = config('google.map.api_key');
 		$url = "https://maps.googleapis.com/maps/api/geocode/json?address=$lat,$lon&key=$api_key";
 		$response = json_decode(file_get_contents($url));
 		$address = array();

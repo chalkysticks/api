@@ -51,13 +51,13 @@ class Archive extends Command {
 		// add beacon to archive, remove from live
 		foreach ($beacons as $beacon) {
 			Models\BeaconArchive::create([
-				'user_id' => $beacon->user_id,
+				'created_at' => $beacon->created_at,
+				'keepalive' => $beacon->keepalive,
 				'lat' => $beacon->lat,
 				'lon' => $beacon->lon,
 				'status' => $beacon->status,
-				'keepalive' => $beacon->keepalive,
-				'created_at' => $beacon->created_at,
 				'updated_at' => $beacon->updated_at,
+				'user_id' => $beacon->user_id,
 			]);
 
 			$beacon->delete();
