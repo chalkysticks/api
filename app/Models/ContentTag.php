@@ -15,7 +15,7 @@ class ContentTag extends Model {
 	 *
 	 * @var string
 	 */
-	protected $table = 'content_tags';
+	protected $table = 'contenttags';
 
 	/**
 	 * The attributes that are mass assignable.
