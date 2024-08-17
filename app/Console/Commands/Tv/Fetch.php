@@ -29,6 +29,13 @@ class VideoObject {
 	public $video_url;
 }
 
+/**
+ * @todo Can we add a YouTube search to this as well?
+ *
+ * @class Fetch
+ * @package Console/Commands/News
+ * @project ChalkySticks API
+ */
 class Fetch extends Command {
 	/**
 	 * The name and signature of the console command.
