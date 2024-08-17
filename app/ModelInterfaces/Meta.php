@@ -5,22 +5,20 @@ namespace App\ModelInterfaces;
 use App\Core\Data\ModelInterface;
 
 /**
- * @class Ads
+ * @class Meta
  * @package ModelInterfaces
  * @project ChalkySticks API
  */
-class Ads extends ModelInterface {
+class Meta extends ModelInterface {
 	/**
-	 * Turn this item object into a generic array
-	 *
 	 * @return array
 	 */
 	public function transform($model) {
 		return [
-			'caption' => $model->caption,
-			'company' => $model->company,
-			'image' => $model->image,
-			'url' => $model->url
+			'id' => $model->id,
+			'group' => $model->group,
+			'key' => $model->key,
+			'value' => $model->value,
 		];
 	}
 }

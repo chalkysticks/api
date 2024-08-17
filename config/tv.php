@@ -4,14 +4,17 @@ return [
 
 	'youtube' => [
 		'channels' => [
+			'@ProBilliardTV',
+			'@AccuStats',
+			'@MatchroomPool1',
+			'@randymallett',
+			'AZBtvision',
+			'Bilijar9',
+			'IPAPOOL',
+			'InsidePOOLmag',
+			'csipool',
 			'genipool14',
 			'mrEpicSponge',
-			'csipool',
-			'propoolinfo',
-			'InsidePOOLmag',
-			'IPAPOOL',
-			'Bilijar9',
-			'AZBtvision',
 		],
 	],
 

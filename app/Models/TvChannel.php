@@ -5,22 +5,22 @@ namespace App\Models;
 use App\Core\Data\Model;
 
 /**
- * @class TvSetting
+ * @class TvChannel
  * @package Models
  * @project ChalkySticks API
  */
-class TvSetting extends Model {
+class TvChannel extends Model {
 	/**
 	 * The database table used by the model.
 	 *
 	 * @var string
 	 */
-	protected $table = 'tvsettings';
+	protected $table = 'tvchannels';
 
 	/**
 	 * The attributes that are mass assignable.
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['key', 'value'];
+	protected $fillable = ['id', 'youtube_id', 'title', 'description', 'channel_id', 'image_url'];
 }

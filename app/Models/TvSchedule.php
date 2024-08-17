@@ -15,7 +15,7 @@ class TvSchedule extends Model {
 	 *
 	 * @var string
 	 */
-	protected $table = 'tv_schedule';
+	protected $table = 'tvschedule';
 
 	/**
 	 * The attributes that are mass assignable.
