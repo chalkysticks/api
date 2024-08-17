@@ -111,6 +111,7 @@ class SeedFromCsv extends Command {
 		$header = fgetcsv($handle);
 
 		while (($data = fgetcsv($handle)) !== false) {
+			print_r($data);
 			$row = [];
 			foreach ($data as $key => $value) {
 				$row[$header[$key]] = $value;

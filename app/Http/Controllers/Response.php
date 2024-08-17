@@ -104,15 +104,14 @@ abstract class Response extends BaseController {
 	public function paginate($paginator, $transformer, $resourceKey = null): LaravelResponse {
 		$resourceKey = $resourceKey ?: $this->resourceKey;
 		$collection = $paginator->getCollection();
-
-		// print_r($paginator);exit;
 		$currentPage = 1;
 		$lastPage = (int) $paginator->lastPage();
 
 		$queryParams = array_diff_key($_GET, array_flip(['page']));
-		foreach ($queryParams as $key => $value) {
-			$paginator->addQuery($key, $value);
-		}
+
+		// foreach ($queryParams as $key => $value) {
+		// 	$paginator->addQuery($key, $value);
+		// }
 
 		$resource = new Fractal\Resource\Collection($collection, $transformer, $resourceKey);
 		$resource->setPaginator(new IlluminatePaginatorAdapter($paginator));

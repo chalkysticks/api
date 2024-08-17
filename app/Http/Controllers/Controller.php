@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Validator;
+
 /**
  * @class Controller
  * @package Http/Controllers
@@ -40,6 +44,17 @@ abstract class Controller extends Response {
 	 * @var int
 	 */
 	protected $max_id = null;
+
+	/**
+	 * @constructor
+	 */
+	public function __construct() {
+		// GET variables
+		$this->limit = \Request::get('limit') ?: $this->limit;
+		$this->max_id = \Request::get('max_id') ?: $this->max_id;
+		$this->since_id = \Request::get('since_id') ?: $this->since_id;
+		$this->limit = max(0, min(static::LIMIT_MAX, $this->limit));
+	}
 
 	/**
 	 * Returns a collection of models. Should return with a method
@@ -198,7 +213,7 @@ abstract class Controller extends Response {
 	 * checkPermissions
 	 *
 	 * @param string Type of permission to check
-	 * @param User Optional user to check for, or Auth'd user
+	 * @param Models\User Optional user to check for, or Auth'd user
 	 *
 	 * @return bool
 	 */
@@ -209,8 +224,9 @@ abstract class Controller extends Response {
 			return true;
 		}
 
-		$user = $user ?: \Auth::user();
+		$user = $_FILES ?: \Auth::user();
 
+		// If no user, return an exit
 		if (!$user) {
 			return $this->errorUnauthorized();
 		}
@@ -221,16 +237,6 @@ abstract class Controller extends Response {
 
 	// Internal
 	// ----------------------------------------------------------------------
-
-	public function __construct() {
-		// GET variables
-		$this->limit = \Request::get('limit') ?: $this->limit;
-		$this->max_id = \Request::get('max_id') ?: $this->max_id;
-		$this->since_id = \Request::get('since_id') ?: $this->since_id;
-
-		// throttle limit
-		$this->limit = max(0, min(static::LIMIT_MAX, $this->limit));
-	}
 
 	protected function getModifier($value) {
 		$modifier = $value[0];
@@ -272,13 +278,11 @@ abstract class Controller extends Response {
 	 * Check if we're allowed to do something
 	 */
 	public function can($permission) {
-		if ($user = Models\Users::fromJWT()) {
+		if ($user = Models\User::fromJWT()) {
 
-			// only Admin user ID #1 can access
 			if ($user->can($permission)) {
 				return true;
 			}
-
 		}
 
 		return false;
@@ -289,7 +293,7 @@ abstract class Controller extends Response {
 	 */
 	public function adminCan($permission) {
 		if ($this->isAdminRequest()) {
-			if ($user = Models\Users::fromJWT()) {
+			if ($user = Models\User::fromJWT()) {
 				if ($user->can($permission)) {
 					return $user;
 				}
@@ -299,9 +303,10 @@ abstract class Controller extends Response {
 		return false;
 	}
 
-
+	/**
+	 * @return bool
+	 */
 	public function isAdminRequest() {
 		return \Request::has('admin');
 	}
-
 }

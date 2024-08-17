@@ -6,7 +6,7 @@ use App\ModelInterfaces;
 use App\Http\Controllers\Controller;
 
 /**
- * @class AdsController
+ * @class Ads
  * @package Http/Controllers/v1
  * @project ChalkySticks API
  */

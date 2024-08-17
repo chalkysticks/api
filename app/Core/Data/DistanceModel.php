@@ -69,12 +69,12 @@ trait DistanceModel {
 	// }
 
 	/**
-	 * @param  Database\Query\Builder  $query
+	 * @param  \Illuminate\Database\Eloquent\Builder  $query
 	 * @param  int  $dist
 	 * @param  string  $location
-	 * @return Database\Query\Builder
+	 * @return \Illuminate\Database\Eloquent\Builder
 	 */
-	public function scopeDistance(Database\Query\Builder $query, int $dist, string $location) {
+	public function scopeDistance(\Illuminate\Database\Eloquent\Builder $query, int $dist, string $location) {
 		// Assuming $location is in "lat,lon" format
 		list($lat, $lon) = explode(',', $location);
 
