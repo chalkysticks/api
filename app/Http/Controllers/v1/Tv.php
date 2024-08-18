@@ -68,7 +68,7 @@ class Tv extends Controller {
 
 		// Data
 		$description = @$payload->description;
-		$seconds = $this->youtubeVideoDuration($url, getenv('YOUTUBE_API_KEY'));
+		$seconds = $this->youtubeVideoDuration($url);
 		$title = @$payload->title;
 		$videoMeta = isset($payload->game_type) ? '{ "game_type": "' . $payload->game_type . '" }' : '';
 

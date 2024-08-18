@@ -7,11 +7,11 @@ use Carbon\Carbon;
 use DateTime;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Response as LaravelResponse;
-use Illuminate\Pagination\Paginator;
 use Illuminate\Routing\Controller as BaseController;
 use League\Fractal;
 use League\Fractal\Pagination\IlluminatePaginatorAdapter;
 use League\Fractal\Serializer;
+use League\Fractal\TransformerAbstract;
 use Request;
 use Symfony\Component\HttpFoundation\Response as Codes;
 
@@ -23,18 +23,19 @@ use Symfony\Component\HttpFoundation\Response as Codes;
 abstract class Response extends BaseController {
 	/**
 	 * Resource key attached to JSON output
-	 * @var $resourceKey
+	 * @var string
 	 */
 	protected $resourceKey = null;
 
 	/**
 	 * Additional ModelInterface embeds to include
-	 * @var $includes
+	 * @var string
 	 */
 	protected $includes = null;
 
 	/**
 	 * Additional Metadata to include
+	 * @var object
 	 */
 	protected $responseMeta = null;
 
@@ -47,31 +48,29 @@ abstract class Response extends BaseController {
 
 	/**
 	 * @param mixed $model
-	 * @param mixed $transformer
+	 * @param TransformerAbstract $transformer
 	 * @return LaravelResponse
 	 */
-	public function item($model, $transformer): LaravelResponse {
+	public function item($model, TransformerAbstract $transformer): LaravelResponse {
 		return $this->model($model, $transformer);
 	}
 
 	/**
 	 * @param mixed $model
-	 * @param mixed $transformer
+	 * @param TransformerAbstract $transformer
 	 * @return LaravelResponse
 	 */
-	public function items($model, $transformer): LaravelResponse {
+	public function items($model, TransformerAbstract $transformer): LaravelResponse {
 		return $this->collection($model, $transformer);
 	}
 
 	/**
-	 * Returns an API Response containing transformed model data.
-	 *
 	 * @param mixed $model
-	 * @param mixed $transformer
-	 * @param string|null $resourceKey
+	 * @param TransformerAbstract $transformer
+	 * @param ?string $resourceKey
 	 * @return LaravelResponse
 	 */
-	public function model($model, $transformer, $resourceKey = null): LaravelResponse {
+	public function model($model, TransformerAbstract $transformer, ?string $resourceKey = null): LaravelResponse {
 		$resourceKey = $resourceKey ?: $this->resourceKey;
 		$resource = new Fractal\Resource\Item($model, $transformer, $resourceKey);
 
@@ -79,14 +78,12 @@ abstract class Response extends BaseController {
 	}
 
 	/**
-	 * Returns an API Response containing a collection of models.
-	 *
 	 * @param mixed $model
-	 * @param mixed $transformer
-	 * @param string|null $resourceKey
+	 * @param TransformerAbstract $transformer
+	 * @param ?string $resourceKey
 	 * @return LaravelResponse
 	 */
-	public function collection($collection, $transformer, $resourceKey = null): LaravelResponse {
+	public function collection($collection, TransformerAbstract $transformer, ?string $resourceKey = null): LaravelResponse {
 		$resourceKey = $resourceKey ?: $this->resourceKey;
 		$resource = new Fractal\Resource\Collection($collection, $transformer, $resourceKey);
 
@@ -94,14 +91,12 @@ abstract class Response extends BaseController {
 	}
 
 	/**
-	 * Returns a paginated API Response based on a collection paginator.
-	 *
 	 * @param mixed $paginator
-	 * @param mixed $transformer
-	 * @param string|null $resourceKey
+	 * @param TransformerAbstract $transformer
+	 * @param ?string $resourceKey
 	 * @return LaravelResponse
 	 */
-	public function paginate($paginator, $transformer, $resourceKey = null): LaravelResponse {
+	public function paginate($paginator, TransformerAbstract $transformer, ?string $resourceKey = null): LaravelResponse {
 		$resourceKey = $resourceKey ?: $this->resourceKey;
 		$collection = $paginator->getCollection();
 		$currentPage = 1;
@@ -131,9 +126,11 @@ abstract class Response extends BaseController {
 	/**
 	 * Returns a successful 201 created
 	 *
+	 * @param mixed $model
+	 * @param TransformerAbstract $transformer
 	 * @return LaravelResponse
 	 */
-	public function created($model = null, $transformer = null): LaravelResponse {
+	public function created($model = null, TransformerAbstract $transformer = null): LaravelResponse {
 		if ($model) {
 			return $this->model($model, $transformer);
 		}
@@ -145,10 +142,10 @@ abstract class Response extends BaseController {
 	 * Returns a 400 Bad Request based on a DB error, such as integrity
 	 * violations.
 	 *
-	 * @param QueryException Error thrown
-	 * @return void
+	 * @param QueryException $exception
+	 * @return LaravelResponse
 	 */
-	public function errorDatabase($exception) {
+	public function errorDatabase($exception): LaravelResponse {
 		$code = is_numeric($exception) ? $exception : $exception->getCode();
 
 		switch ($code) {
@@ -162,97 +159,97 @@ abstract class Response extends BaseController {
 				break;
 		}
 
-		$this->errorBadRequest($content);
+		return $this->errorBadRequest($content);
 	}
 
 	/**
 	 * Returns a 400 Bad Request error
 	 *
-	 * @param $string Optional message to throw with error
-	 * @return void
+	 * @param string $content
+	 * @return LaravelResponse
 	 */
-	public function errorBadRequest($content = '') {
-		$this->error($content, Codes::HTTP_BAD_REQUEST);
+	public function errorBadRequest($content = ''): LaravelResponse {
+		return $this->error($content, Codes::HTTP_BAD_REQUEST);
 	}
 
 	/**
 	 * Returns a 409 Conflict error
 	 *
-	 * @param $string Optional message to throw with error
-	 * @return void
+	 * @param string $content
+	 * @return LaravelResponse
 	 */
-	public function errorConflict($content = '') {
-		$this->error($content, Codes::HTTP_CONFLICT);
+	public function errorConflict($content = ''): LaravelResponse {
+		return $this->error($content, Codes::HTTP_CONFLICT);
 	}
 
 	/**
 	 * Returns a 401 Unauthorized error
 	 *
-	 * @param $string Optional message to throw with error
-	 * @return void
+	 * @param string $content
+	 * @return LaravelResponse
 	 */
-	public function errorUnauthorized($content = '') {
-		$this->error($content, Codes::HTTP_UNAUTHORIZED);
+	public function errorUnauthorized($content = ''): LaravelResponse {
+		return $this->error($content, Codes::HTTP_UNAUTHORIZED);
 	}
 
 	/**
 	 * Returns a 401 Unauthorized error
 	 *
-	 * @param $string Optional message to throw with error
-	 * @return void
+	 * @param string $content
+	 * @return LaravelResponse
 	 */
-	public function errorPermissions($content = '') {
-		$this->error($content ?: 'User does not have permissions to do this.', Codes::HTTP_UNAUTHORIZED);
+	public function errorPermissions($content = ''): LaravelResponse {
+		return $this->error($content ?: 'User does not have permissions to do this.', Codes::HTTP_UNAUTHORIZED);
 	}
 
 	/**
 	 * Returns a 404 Not Found error
 	 *
-	 * @param $string Optional message to throw with error
-	 * @return void
+	 * @param string $content
+	 * @return LaravelResponse
 	 */
-	public function errorNotFound($content = '') {
-		$this->error($content, Codes::HTTP_NOT_FOUND);
+	public function errorNotFound($content = ''): LaravelResponse {
+		return $this->error($content, Codes::HTTP_NOT_FOUND);
 	}
 
 	/**
 	 * Returns a 405 Method Not Allowed error
 	 *
-	 * @param $string Optional message to throw with error
-	 * @return void
+	 * @param string $content
+	 * @return LaravelResponse
 	 */
-	public function errorNotAllowed($content = '') {
-		$this->error($content, Codes::HTTP_METHOD_NOT_ALLOWED);
+	public function errorNotAllowed($content = ''): LaravelResponse {
+		return $this->error($content, Codes::HTTP_METHOD_NOT_ALLOWED);
 	}
 
 	/**
 	 * Returns a 406 Not Acceptable error
 	 *
-	 * @param $string Optional message to throw with error
-	 * @return void
+	 * @param string $content
+	 * @return LaravelResponse
 	 */
-	public function errorNotAcceptable($content = '') {
-		$this->error($content, Codes::HTTP_NOT_ACCEPTABLE);
+	public function errorNotAcceptable($content = ''): LaravelResponse {
+		return $this->error($content, Codes::HTTP_NOT_ACCEPTABLE);
 	}
 
 	/**
 	 * Returns a 422 Unprocessable Entity error
 	 *
-	 * @param $string Optional message to throw with error
-	 * @return void
+	 * @param string $content
+	 * @return LaravelResponse
 	 */
-	public function errorUnprocessable($content = '') {
-		$this->error($content, Codes::HTTP_UNPROCESSABLE_ENTITY);
+	public function errorUnprocessable($content = ''): LaravelResponse {
+		return $this->error($content, Codes::HTTP_UNPROCESSABLE_ENTITY);
 	}
 
 	/**
 	 * Returns a 500 Internal Server Error
 	 *
-	 * @param $string Optional message to throw with error
-	 * @return void
+	 * @param string $content
+	 * @return LaravelResponse
 	 */
-	public function errorInternal($content = '') {
-		$this->error($content, Codes::HTTP_INTERNAL_SERVER_ERROR);
+	public function errorInternal($content = ''): LaravelResponse {
+		return $this->error($content, Codes::HTTP_INTERNAL_SERVER_ERROR);
 	}
 
 	// Getters / Setters
@@ -299,10 +296,10 @@ abstract class Response extends BaseController {
 	/**
 	 * @param string $content
 	 * @param int $code
-	 * @return never
+	 * @return LaravelResponse
 	 */
-	protected function error($content = '', int $code = 0) {
-		$response = new \Illuminate\Http\Response($content, $code);
+	protected function error($content = '', int $code = 0): LaravelResponse {
+		$response = new LaravelResponse($content, $code);
 		$response->header('Content-Type', 'application/json');
 		$response->header('Cache-Control', 'public');
 		$response->setContent([
@@ -314,7 +311,7 @@ abstract class Response extends BaseController {
 		$response->sendHeaders();
 		$response->sendContent();
 
-		exit;
+		return $response;
 		// throw new ApiException($content, null, null, [], $code);
 	}
 
@@ -374,9 +371,9 @@ abstract class Response extends BaseController {
 	 * @param object $object
 	 * @param int $code
 	 * @param array $headers
-	 * @return \Illuminate\Http\Response
+	 * @return LaravelResponse
 	 */
-	protected function json(object $object, int $code = 200, array $headers = []) {
+	protected function json(object $object, int $code = 200, array $headers = []): LaravelResponse {
 		$content = json_encode($object);
 		return $this->simpleResponse($content, $code, $headers);
 	}

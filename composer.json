@@ -41,12 +41,13 @@
 	"name": "chalkysticks/api",
 	"prefer-stable": true,
 	"require": {
+		"php": "^8.2",
 		"intervention/image": "^3.7",
 		"laravel/framework": "^11.9",
 		"laravel/tinker": "^2.9",
 		"league/fractal": "^0.20.1",
 		"nesbot/carbon": "^3.7",
-		"php": "^8.2",
+		"stevenmaguire/yelp-php": "^2.2",
 		"stripe/stripe-php": "^15.7",
 		"twilio/sdk": "^8.2",
 		"tymon/jwt-auth": "^2.1"

@@ -54,6 +54,6 @@ class Ads extends Controller {
 			]
 		];
 
-		return $this->collection($ads, new ModelInterfaces\Ads);
+		return $this->collection($ads, new ModelInterfaces\Ad);
 	}
 }
