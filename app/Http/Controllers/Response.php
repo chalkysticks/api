@@ -348,12 +348,12 @@ abstract class Response extends BaseController {
 	}
 
 	/**
-	 * @param string $content
+	 * @param string|array|object $content
 	 * @param int $code
 	 * @param array $headers
 	 * @return LaravelResponse
 	 */
-	protected function simpleResponse(string $content = '', int $code = 200, array $headers = []): LaravelResponse {
+	protected function simpleResponse(string|array|object $content = '', int $code = 200, array $headers = []): LaravelResponse {
 		$response = new LaravelResponse($content, $code);
 		$response->header('Content-Type', 'application/json');
 		$response->header('Cache-Control', 'public');
