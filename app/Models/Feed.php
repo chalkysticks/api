@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Core\Data\DistanceModel;
 use App\Core\Data\Model;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * @class Feed
@@ -38,4 +39,31 @@ class Feed extends Model {
 	 * @var array
 	 */
 	protected $fillable = ['lat', 'lon', 'type', 'data', 'notes', 'created_at'];
+
+	/**
+	 * Scope to filter feeds by distance and lat/lon.
+	 *
+	 * @param Builder $query
+	 * @param int $distance
+	 * @param int $latitude
+	 * @param int $longitude
+	 * @return Builder
+	 */
+	public function scopeWithDistanceFilter(Builder $query, int $distance = 0, int $latitude = 0, int $longitude = 0): Builder {
+		return $query->where(function ($query) use ($distance, $latitude, $longitude) {
+			$query->distance($distance, $latitude . ',' . $longitude)
+				->orWhere('lat', '=', 0);
+		});
+	}
+
+	/**
+	 * Scope to filter by creation date.
+	 *
+	 * @param Builder $query
+	 * @param string $created_at
+	 * @return Builder
+	 */
+	public function scopeCreatedBefore(Builder $query, string $created_at): Builder {
+		return $query->where('created_at', '<=', $created_at);
+	}
 }
