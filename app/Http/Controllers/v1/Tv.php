@@ -226,9 +226,6 @@ class Tv extends Controller {
 	/**
 	 * @return int
 	 */
-	/**
-	 * @return int
-	 */
 	protected function getTimeDifference(): int {
 		return time() - strtotime("today");
 	}
