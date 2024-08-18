@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models;
+use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 
@@ -49,87 +50,10 @@ abstract class Controller extends Response {
 	 * @constructor
 	 */
 	public function __construct() {
-		// GET variables
 		$this->limit = \Request::get('limit') ?: $this->limit;
 		$this->max_id = \Request::get('max_id') ?: $this->max_id;
 		$this->since_id = \Request::get('since_id') ?: $this->since_id;
 		$this->limit = max(0, min(static::LIMIT_MAX, $this->limit));
-	}
-
-	/**
-	 * Returns a collection of models. Should return with a method
-	 * not allowed unless overriden.
-	 *
-	 * @return \Response|void
-	 */
-	public function getIndex() {
-		$this->errorNotAllowed();
-	}
-
-	/**
-	 * Returns a collection of models. Should return with a method
-	 * not allowed unless overriden.
-	 *
-	 * @param string $code
-	 * @return \Response|void
-	 */
-	public function getWithCode($code) {
-		$this->errorNotAllowed();
-	}
-
-	/**
-	 * Returns specific model. Should return with a method
-	 * not allowed unless overriden.
-	 *
-	 * @param int $id
-	 * @return \Response|void
-	 */
-	public function getSingle($id) {
-		$this->errorNotAllowed();
-	}
-
-	/**
-	 * Returns specific model. Should return with a method
-	 * not allowed unless overriden.
-	 *
-	 * @param int $code
-	 * @param int $id
-	 * @return \Response|void
-	 */
-	public function getWithCodeSingle($code, $id) {
-		$this->errorNotAllowed();
-	}
-
-	/**
-	 * Updates a specific model. Should return with a method
-	 * not allowed unless overriden.
-	 *
-	 * @param int $id
-	 * @return \Response|void
-	 */
-	public function putSingle($id) {
-		$this->errorNotAllowed();
-	}
-
-	/**
-	 * Creates a new model. Should return with a method
-	 * not allowed unless overriden.
-	 *
-	 * @return \Response|void
-	 */
-	public function postIndex() {
-		$this->errorNotAllowed();
-	}
-
-	/**
-	 * Deletes a specific model. Should return with a method
-	 * not allowed unless overriden.
-	 *
-	 * @param int $id
-	 * @return \Response|void
-	 */
-	public function deleteSingle($id) {
-		$this->errorNotAllowed();
 	}
 
 	/**
