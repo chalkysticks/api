@@ -7,6 +7,7 @@ return [
 			'@ProBilliardTV',
 			'@AccuStats',
 			'@MatchroomPool1',
+			'@MatchroomMultiSport',
 			'@randymallett',
 			'AZBtvision',
 			'Bilijar9',
