@@ -30,7 +30,13 @@ class VideoObject {
 }
 
 /**
- * @todo Can we add a YouTube search to this as well?
+ * This command will scrape the YouTube API for videos from a list of channels
+ * and playlists. It will then parse the video titles to determine the game type
+ * and players involved. It will then save the video to the TV Schedule database.
+ *
+ * php artisan tv:fetch --create=true
+ *
+ * @todo Should we add a YouTube search to this as well?
  *
  * @class Fetch
  * @package Console/Commands/News
@@ -82,7 +88,7 @@ class Fetch extends Command {
 	 * @return mixed
 	 */
 	public function handle() {
-		$channels = config('tv.youtube.channels');
+		$channels = config('chalkysticks.tv.channels');
 		$videos = [];
 
 		// Get cached videos so we don't call YouTube too often
@@ -198,7 +204,7 @@ class Fetch extends Command {
 
 		// It's probably a user's channel
 		else {
-			$json = $this->fetchJson('https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername=' . $channel . '&key=' . config('google.youtube.api_key'));
+			$json = fetchJson('https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername=' . $channel . '&key=' . config('google.youtube.api_key'));
 
 			$this->line("Getting user $channel");
 		}
@@ -235,7 +241,7 @@ class Fetch extends Command {
 		$videos = [];
 
 		// Request JSON data from YouTube playlist url
-		$json = (object) $this->fetchJson($playlist_url);
+		$json = (object) fetchJson($playlist_url);
 
 		// There were no videos available
 		if ($json === false || (array) $json === []) {
@@ -248,7 +254,7 @@ class Fetch extends Command {
 			if ($item->status->privacyStatus == 'public') {
 				$videoId = $item->contentDetails->videoId;
 				$videoUrl = "https://www.googleapis.com/youtube/v3/videos?id=$videoId&part=status,snippet,contentDetails,statistics&key=" . config('google.youtube.api_key');
-				$videoJson = $this->fetchJson($videoUrl);
+				$videoJson = fetchJson($videoUrl);
 
 				// Get first video object
 				$video = $videoJson->items[0];
@@ -352,22 +358,6 @@ class Fetch extends Command {
 		$title = trim("$videoMeta->player1 vs $videoMeta->player2");
 		$title = preg_replace('/\s+/', ' ', $title);
 		return $title;
-	}
-
-	/**
-	 * Fetch JSON from remote url
-	 *
-	 * @param string $url
-	 * @return array
-	 */
-	private function fetchJson(string $url): object {
-		try {
-			$response = file_get_contents($url);
-		} catch (\Exception $e) {
-			return (object) [];
-		}
-
-		return json_decode($response);
 	}
 
 	/**

@@ -1,5 +1,33 @@
 <?php
 
+/**
+ * @param string $url
+ * @return object
+ */
+function fetchJson(string $url): object {
+	try {
+		$response = file_get_contents($url);
+	} catch (\Exception $e) {
+		return (object) [];
+	}
+
+	return json_decode($response);
+}
+
+/**
+ * @param string $url
+ * @return string
+ */
+function parseYoutubeId(string $url): string {
+	$regexp = '/(?:youtube(?:-nocookie)?\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i';
+
+	if (preg_match($regexp, $url, $matches)) {
+		return $matches[1];
+	}
+
+	return '';
+}
+
 function utf8ize($d) {
 	if (is_array($d))
 		foreach ($d as $k => $v)
