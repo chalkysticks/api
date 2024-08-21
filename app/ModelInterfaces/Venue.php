@@ -14,14 +14,14 @@ class Venue extends ModelInterface {
 	/**
 	 * @var array
 	 */
-	protected $availableIncludes = [
+	protected array $availableIncludes = [
 		'checkins',
 	];
 
 	/**
 	 * @var array
 	 */
-	protected $defaultIncludes = [
+	protected array $defaultIncludes = [
 		'details',
 		'media',
 		'meta',

@@ -15,7 +15,7 @@ class BeaconArchive extends ModelInterface {
 	/**
 	 * @var array
 	 */
-	protected $defaultIncludes = [
+	protected array $defaultIncludes = [
 		// 'user'
 	];
 

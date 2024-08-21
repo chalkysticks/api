@@ -14,14 +14,14 @@ class Game extends ModelInterface {
 	/**
 	 * @var array
 	 */
-	protected $availableIncludes = [
+	protected array $availableIncludes = [
 		'innings'
 	];
 
 	/**
 	 * @var array
 	 */
-	protected $defaultIncludes = [
+	protected array $defaultIncludes = [
 		'user1',
 		'user2'
 	];

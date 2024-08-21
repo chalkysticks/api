@@ -14,7 +14,7 @@ class GameNight extends ModelInterface {
 	/**
 	 * @var array
 	 */
-	protected $defaultIncludes = [
+	protected array $defaultIncludes = [
 		'matches'
 	];
 

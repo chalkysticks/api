@@ -15,7 +15,7 @@ class Beacon extends ModelInterface {
 	/**
 	 * @var array
 	 */
-	protected $defaultIncludes = [
+	protected array $defaultIncludes = [
 		'user'
 	];
 

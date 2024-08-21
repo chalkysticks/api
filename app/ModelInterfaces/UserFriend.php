@@ -14,7 +14,7 @@ class UserFriend extends ModelInterface {
 	/**
 	 * @var array
 	 */
-	protected $defaultIncludes = [
+	protected array $defaultIncludes = [
 		'friend'
 	];
 

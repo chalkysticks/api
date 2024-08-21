@@ -14,7 +14,7 @@ class GameMatch extends ModelInterface {
 	/**
 	 * @var array
 	 */
-	protected $availableIncludes = [
+	protected array $availableIncludes = [
 		'games',
 		'user1',
 		'user2'

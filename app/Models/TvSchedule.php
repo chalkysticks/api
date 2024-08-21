@@ -39,4 +39,11 @@ class TvSchedule extends Model {
 		$this->flags = 9999;
 		$this->save();
 	}
+
+	// Relationships
+	// -------------------------------------------------------------------------
+
+	public function channel() {
+		return $this->hasOne(TvChannel::class, 'youtube_id', 'youtube_channel_id');
+	}
 }

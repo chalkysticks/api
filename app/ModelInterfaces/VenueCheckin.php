@@ -14,14 +14,14 @@ class VenueCheckin extends ModelInterface {
 	/**
 	 * @var array
 	 */
-	protected $availableIncludes = [
+	protected array $availableIncludes = [
 		'venue'
 	];
 
 	/**
 	 * @var array
 	 */
-	protected $defaultIncludes = [
+	protected array $defaultIncludes = [
 		'user'
 	];
 

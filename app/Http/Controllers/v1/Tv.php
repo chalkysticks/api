@@ -16,6 +16,24 @@ class Tv extends Controller {
 	/**
 	 * @return \Illuminate\Http\Response
 	 */
+	public function getChannels() {
+		$collection = Models\TvChannel::all();
+
+		return $this->collection($collection, new ModelInterfaces\TvChannel);
+	}
+
+	/**
+	 * @return \Illuminate\Http\Response
+	 */
+	public function getChannelMap() {
+		$collection = Models\TvSchedule::all();
+
+		return $this->collection($collection, new ModelInterfaces\TvChannelMap);
+	}
+
+	/**
+	 * @return \Illuminate\Http\Response
+	 */
 	public function getSchedule() {
 		$payload = (object) $this->payload([
 			'order' => ['string'],
@@ -34,6 +52,7 @@ class Tv extends Controller {
 			->where('video_meta', 'like', "%$channel%")
 			->where('id', '>=', $idMin)
 			->where('id', '<=', $idMax)
+			->limit(50)
 			->get();
 
 		// Randomize

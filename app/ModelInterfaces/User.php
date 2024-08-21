@@ -14,7 +14,7 @@ class User extends ModelInterface {
 	/**
 	 * @var array
 	 */
-	protected $availableIncludes = [
+	protected array $availableIncludes = [
 		'accomplishments',
 		'checkins',
 		'friends',
@@ -23,7 +23,7 @@ class User extends ModelInterface {
 	/**
 	 * @var array
 	 */
-	protected $defaultIncludes = [
+	protected array $defaultIncludes = [
 		'games',
 		'media',
 		'meta',

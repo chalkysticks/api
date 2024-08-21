@@ -14,7 +14,7 @@ class VenueRevision extends ModelInterface {
 	/**
 	 * @var array
 	 */
-	protected $availableIncludes = [
+	protected array $availableIncludes = [
 		'user'
 	];
 

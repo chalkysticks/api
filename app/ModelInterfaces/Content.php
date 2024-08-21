@@ -14,7 +14,7 @@ class Content extends ModelInterface {
 	/**
 	 * @var array
 	 */
-	protected $defaultIncludes = [
+	protected array $defaultIncludes = [
 		'tags'
 	];
 

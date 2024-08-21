@@ -14,7 +14,7 @@ class UserSimpleWithMedia extends ModelInterface {
 	/**
 	 * @var array
 	 */
-	protected $defaultIncludes = [
+	protected array $defaultIncludes = [
 		'media',
 	];
 

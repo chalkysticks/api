@@ -3,6 +3,7 @@
 namespace App\ModelInterfaces;
 
 use App\Core\Data\ModelInterface;
+use App\Models;
 
 /**
  * @class TvSchedule
@@ -10,6 +11,28 @@ use App\Core\Data\ModelInterface;
  * @project ChalkySticks API
  */
 class TvSchedule extends ModelInterface {
+	/**
+	 * @var array
+	 */
+	protected array $availableIncludes = [];
+
+	/**
+	 * @var array
+	 */
+	protected array $defaultIncludes = [
+		'channel',
+	];
+
+	/**
+	 * @param Models\TvSchedule $model
+	 * @return \League\Fractal\Resource\Item
+	 */
+	public function includeChannel(Models\TvSchedule $model) {
+		$channel = $model->channel;
+
+		return $this->model($channel, new TvChannel);
+	}
+
 	/**
 	 * @return array
 	 */

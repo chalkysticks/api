@@ -19,6 +19,8 @@ Route::prefix('v1')->group(function () {
 	Route::get('/teams', [App\Http\Controllers\v1\Teams::class, 'getIndex']);
 	Route::get('/teams/{id}', [App\Http\Controllers\v1\Teams::class, 'getSingle']);
 
+	Route::get('/tv/channels', [App\Http\Controllers\v1\Tv::class, 'getChannels']);
+	Route::get('/tv/channel-map', [App\Http\Controllers\v1\Tv::class, 'getChannelMap']);
 	Route::get('/tv/schedule', [App\Http\Controllers\v1\Tv::class, 'getSchedule']);
 	Route::post('/tv/schedule', [App\Http\Controllers\v1\Tv::class, 'postSchedule']);
 	Route::delete('/tv/schedule', [App\Http\Controllers\v1\Tv::class, 'deleteSchedule']);
