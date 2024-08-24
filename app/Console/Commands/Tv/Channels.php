@@ -3,14 +3,13 @@
 namespace App\Console\Commands\Tv;
 
 use App\Models;
-use App\Utilities;
 use Illuminate\Console\Command;
 
 /**
  * Save details on the channels we use for TV to the tvchannels table.
  *
  * @class Fetch
- * @package Console/Commands/News
+ * @package Console/Commands/NeTvws
  * @project ChalkySticks API
  */
 class Channels extends Command {
@@ -34,7 +33,7 @@ class Channels extends Command {
 	 * @return mixed
 	 */
 	public function handle() {
-		$channels = config('tv.youtube.channels');
+		$channels = config('chalkysticks.tv.channels');
 
 		foreach ($channels as $channelId) {
 			Models\TvChannel::createFromChannelId($channelId);

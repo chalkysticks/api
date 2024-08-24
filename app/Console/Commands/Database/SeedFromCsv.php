@@ -7,7 +7,7 @@ use Illuminate\Console\Command;
 
 /**
  * @class SeedFromCsv
- * @package Console/Commands/News
+ * @package Console/Commands/Database
  * @project ChalkySticks API
  */
 class SeedFromCsv extends Command {

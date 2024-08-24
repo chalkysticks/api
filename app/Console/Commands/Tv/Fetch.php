@@ -3,6 +3,7 @@
 namespace App\Console\Commands\Tv;
 
 use App\Models;
+use App\Utilities;
 use Illuminate\Console\Command;
 use Illuminate\Database\QueryException;
 
@@ -39,7 +40,7 @@ class VideoObject {
  * @todo Should we add a YouTube search to this as well?
  *
  * @class Fetch
- * @package Console/Commands/News
+ * @package Console/Commands/Tv
  * @project ChalkySticks API
  */
 class Fetch extends Command {
@@ -56,15 +57,6 @@ class Fetch extends Command {
 	 * @var string
 	 */
 	protected $description = 'Fetch sources from YouTube for TV';
-
-	/**
-	 * Email recipients.
-	 *
-	 * @var array
-	 */
-	protected $emails = [
-		'matt@chalkysticks.com',
-	];
 
 	/**
 	 * Where to store our fetch videos JSON
@@ -204,9 +196,10 @@ class Fetch extends Command {
 
 		// It's probably a user's channel
 		else {
-			$json = fetchJson('https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername=' . $channel . '&key=' . config('google.youtube.api_key'));
+			// $json = fetchJson('https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername=' . $channel . '&key=' . config('google.youtube.api_key'));
+			$json = Utilities\YouTube::fetchChannel($channel, 'contentDetails');
 
-			$this->line("Getting user $channel");
+			$this->line("Getting user/channel: $channel");
 		}
 
 		// If we received items from our API call...

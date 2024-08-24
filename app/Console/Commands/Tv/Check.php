@@ -14,7 +14,7 @@ use Illuminate\Console\Command;
  * Fails: https://youtube.com/embed/Bv7hZ9e7-T4
  *
  * @class Fetch
- * @package Console/Commands/News
+ * @package Console/Commands/Tv
  * @project ChalkySticks API
  */
 class Check extends Command {
