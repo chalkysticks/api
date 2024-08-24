@@ -9,25 +9,39 @@ namespace App\Utilities;
  */
 class YouTube {
 	/**
-	 * @param string channelId
+	 * @param string $channelId
+	 * @param string $part
 	 * @param int $attempt
 	 * @return object
 	 */
-	public static function fetchChannel(string $channelId, int $attempt = 0): object {
+	public static function fetchChannel(string $channelId, string $part = 'snippet', int $attempt = 0): object {
 		$apiKey = config('google.youtube.api_key');
 		$queryString = ['id', 'forUsername', 'forHandle'];
-		$url = "https://www.googleapis.com/youtube/v3/channels?part=snippet&$queryString[$attempt]=$channelId&key=$apiKey";
+		$url = "https://www.googleapis.com/youtube/v3/channels?part={$part}&$queryString[$attempt]=$channelId&key=$apiKey";
 		$json = fetchJson($url);
 
 		if ($json->pageInfo->totalResults === 0 && $attempt < count($queryString) - 1) {
-			return self::fetchChannel($channelId, $attempt + 1);
+			return self::fetchChannel($channelId, $part, $attempt + 1);
 		}
 
 		return $json;
 	}
 
 	/**
-	 * @param string youtubeUrl
+	 * @param string $channelId
+	 * @param string $part
+	 * @return object
+	 */
+	public static function fetchLiveChannel(string $channelId, string $part = 'snippet'): object {
+		$apiKey = config('google.youtube.api_key');
+		$url = "https://www.googleapis.com/youtube/v3/search?part=$part&channelId=$channelId&eventType=live&type=video&key=$apiKey";
+		$json = fetchJson($url);
+
+		return $json;
+	}
+
+	/**
+	 * @param string $youtubeUrl
 	 * @param int $attempt
 	 * @return object
 	 */
