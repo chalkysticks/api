@@ -37,18 +37,25 @@ class FetchLive extends Command {
 	 * @return mixed
 	 */
 	public function handle() {
-		$channels = config('chalkysticks.tv.channels');
+		$channels = config('chalkysticks.tv.live');
 		$videos = [];
 
 		foreach ($channels as $channelId) {
 			$model = Models\TvChannel::where(DB::raw('LOWER(channel_id)'), strtolower($channelId))->first();
-			$youtubeId = $model ? $model->youtube_id : '';
+			$youtubeId = $model ? $model->youtube_id : $channelId;
 
-			if (!empty($youtubeId)) {
-				$videos = array_merge($videos, $this->getSource($youtubeId));
+			// No ID available
+			if (empty($youtubeId)) {
+				continue;
 			}
+
+			// Fetch videos
+			$videos = array_merge($videos, $this->getSource($youtubeId));
 		}
 
+		foreach ($videos as $video) {
+			$this->addVideoToSchedule($video);
+		}
 
 		echo "We would save these live videos.";
 
@@ -61,43 +68,36 @@ class FetchLive extends Command {
 	 * @param VideoMeta $videoMeta
 	 * @return void
 	 */
-	protected function addVideoToSchedule(VideoMeta $videoMeta) {
-		// If there are no players or game, then escape
-		if ($this->isVideoWorthSaving($videoMeta) === false) {
-			$this->line("Skipping: $videoMeta->title");
-
-			return;
-		}
-
+	protected function addVideoToSchedule($video) {
 		// Convert the video URL into a normalized YouTube embed
-		$url = $this->convertYoutubeUrl($videoMeta->video_url);
-
-		// Add video meta if we have some
-		$video_meta = "{ \"game_type\": \"$videoMeta->game_type\" }";
+		$url = $this->convertYoutubeUrl($video->video_url);
 
 		// Add title and description
-		$title = $this->createTitleFromVideoMeta($videoMeta);
-		$description = $this->createDescriptionFromVideoMeta($videoMeta);
+		$title = $video->title;
+		$description = $video->description;
 
 		// Model data
 		$data = [
+			'air_at' => $video->air_at,
 			'description' => $description,
-			'duration' => $videoMeta->duration,
+			'duration' => 0,
 			'embed_url' => $url,
+			'is_live' => true,
 			'title' => $title,
-			'video_meta' => $video_meta,
+			'video_meta' => '',
+			'youtube_channel_id' => $video->channel_id,
 		];
 
 		// We're not supposed to create
 		if (!!!$this->option('create')) {
-			$this->line(" 🔸 Would have added: \n $videoMeta->title\n$title\n\n");
+			$this->line(" 🔸 Would have added: \n $video->title\n$title\n\n");
 
 			return;
 		}
 
 		// Create a TvSchedule entry
 		try {
-			Models\TvSchedule::create($data);
+			Models\TvSchedule::updateOrCreate(['embed_url' => $url], $data);
 
 			$this->info("Added: $title");
 		} catch (QueryException $e) {
@@ -125,6 +125,8 @@ class FetchLive extends Command {
 		if ($json !== false && isset($json->items) && count($json->items)) {
 			foreach ($json->items as $video) {
 				$data = (object) [
+					'air_at' => @$video->snippet->publishTime,
+					'channel_id' => @$video->snippet->channelId,
 					'description' => $video->snippet->description,
 					'duration' => 0,
 					'thumbnail_url' => @$video->snippet->thumbnails->standard->url ?? @$video->snippet->thumbnails->medium->url,

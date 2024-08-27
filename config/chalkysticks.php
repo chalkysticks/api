@@ -45,16 +45,23 @@ return [
 			'@SnookerHome',
 			'@SnookerHome-yw4ol',
 			'@snookernews8119',
+			'@SavannahEaston',
 			'@randymallett',
 			'@WPBAbilliards',
 			'AZBtvision',
 			'Bilijar9',
 			'IPAPOOL',
 			'InsidePOOLmag',
+			'@fedorslepchenkov',
+			'@LegendBilliard',
 			'csipool',
 			// '@VenomTrickshotsOfficial',
 			'genipool14',
 			'mrEpicSponge',
+		],
+		'live' => [
+			'@fedorslepchenkov',
+			'@LegendBilliard',
 		],
 	]
 ];

@@ -20,7 +20,7 @@ class ReverseFetch extends Command {
 	/**
 	 * @var string
 	 */
-	protected $signature = 'tv:reversefetch  {youtubeUrl?} {--all=false}';
+	protected $signature = 'tv:reversefetch {youtubeUrl?} {--all=false}';
 
 	/**
 	 * @var string
@@ -45,7 +45,7 @@ class ReverseFetch extends Command {
 	 * @return void
 	 */
 	protected function processAll() {
-		$models = Models\TvSchedule::all();
+		$models = Models\TvSchedule::all()->reverse();
 
 		// Run through models
 		foreach ($models as $model) {

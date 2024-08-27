@@ -34,7 +34,7 @@ class YouTube {
 	 */
 	public static function fetchLiveChannel(string $channelId, string $part = 'snippet'): object {
 		$apiKey = config('google.youtube.api_key');
-		$url = "https://www.googleapis.com/youtube/v3/search?part=$part&channelId=$channelId&eventType=live&type=video&key=$apiKey";
+		$url = "https://www.googleapis.com/youtube/v3/search?part=$part&channelId=$channelId&videoEmbeddable=true&eventType=live&type=video&key=$apiKey";
 		$json = fetchJson($url);
 
 		return $json;

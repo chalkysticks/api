@@ -28,9 +28,7 @@ class TvSchedule extends ModelInterface {
 	 * @return \League\Fractal\Resource\Item
 	 */
 	public function includeChannel(Models\TvSchedule $model) {
-		$channel = $model->channel;
-
-		return $this->model($channel, new TvChannel);
+		return $model->channel ? $this->model($model->channel, new TvChannel) : null;
 	}
 
 	/**

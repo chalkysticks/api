@@ -23,7 +23,7 @@ class Check extends Command {
 	 *
 	 * @var string
 	 */
-	protected $signature = 'tv:check {youtubeUrl?} {--all=false}';
+	protected $signature = 'tv:check {youtubeUrl?} {--live=false} {--all=false}';
 
 	/**
 	 * The console command description.
@@ -40,9 +40,12 @@ class Check extends Command {
 	public function handle() {
 		$youtubeUrl = $this->argument('youtubeUrl');
 		$all = $this->option('all');
+		$liveOnly = $this->option('live');
 
 		if ($youtubeUrl) {
 			$this->processSingle($youtubeUrl);
+		} else if ($liveOnly) {
+			$this->processLive();
 		} else if ($all) {
 			$this->processAll();
 		}
@@ -53,6 +56,18 @@ class Check extends Command {
 	 */
 	private function processAll() {
 		$models = Models\TvSchedule::all();
+
+		// Run through models
+		foreach ($models as $model) {
+			$this->processSingle($model);
+		}
+	}
+
+	/**
+	 * @return void
+	 */
+	private function processLive() {
+		$models = Models\TvSchedule::where('is_live', true)->get();
 
 		// Run through models
 		foreach ($models as $model) {

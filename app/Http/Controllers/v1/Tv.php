@@ -34,6 +34,23 @@ class Tv extends Controller {
 	/**
 	 * @return \Illuminate\Http\Response
 	 */
+	public function getLive() {
+		$payload = (object) $this->payload([
+			'order' => ['string'],
+		]);
+
+		// Get all live events
+		$collection = Models\TvSchedule::where('is_live', true)
+			->whereNull('end_air_at')
+			->limit(50)
+			->get();
+
+		return $this->collection($collection, new ModelInterfaces\TvSchedule);
+	}
+
+	/**
+	 * @return \Illuminate\Http\Response
+	 */
 	public function getSchedule() {
 		$payload = (object) $this->payload([
 			'order' => ['string'],
