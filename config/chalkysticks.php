@@ -62,6 +62,13 @@ return [
 		'live' => [
 			'@fedorslepchenkov',
 			'@LegendBilliard',
+			'@ProBilliardTV',
+			'@MatchroomPool1',
+			'@MatchroomMultiSport',
+			'@SnookerPlanet',
+			'IPAPOOL',
+			'InsidePOOLmag',
+			'csipool',
 		],
 	]
 ];

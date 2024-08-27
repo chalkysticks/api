@@ -53,11 +53,13 @@ class FetchLive extends Command {
 			$videos = array_merge($videos, $this->getSource($youtubeId));
 		}
 
+		// Remove old videos
+		$this->removeOldVideos();
+
+		// Add new videos
 		foreach ($videos as $video) {
 			$this->addVideoToSchedule($video);
 		}
-
-		echo "We would save these live videos.";
 
 		print_r($videos);
 	}
@@ -103,6 +105,18 @@ class FetchLive extends Command {
 		} catch (QueryException $e) {
 			$this->line("Exists $title");
 		}
+	}
+
+	/**
+	 * @return void
+	 */
+	private function removeOldVideos() {
+		if (!!!$this->option('create')) {
+			return;
+		}
+
+		// Remove all live videos
+		Models\TvSchedule::where('is_live', true)->delete();
 	}
 
 	/**
