@@ -77,11 +77,11 @@ return [
 			'@MatchroomPool1',
 			'@SnookerPlanet',
 			'@fedorslepchenkov',
-			'UC2rZP5KZgwVUfqKPjsd-o6A', // ipapool
+			// 'UC2rZP5KZgwVUfqKPjsd-o6A', // ipapool
 			'UCI6R2dargsn6o5eteEDAJ3Q', // Pool Action TV
 			'UCQ8cM7o5Gu9l9G3fDP5Xpsg', // Matchroom Multisport
-			'UCcNJ3Z708plAMWVkcluIDmA', // Pro billiard
-			'UCk6Ns54af47rPzyNvOUnHDA', // insidepool mag
+			// 'UCcNJ3Z708plAMWVkcluIDmA', // Pro billiard
+			// 'UCk6Ns54af47rPzyNvOUnHDA', // insidepool mag
 			'UCtBRGZemSuj6k30FMQf4nJw', // CSI pool
 		],
 	]
