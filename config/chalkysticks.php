@@ -37,6 +37,7 @@ return [
 
 	'tv' => [
 		'channels' => [
+			'@biljardpalatsetstockholm',
 			'@shootersbilliardssportsbar8061',
 			'@HighlightBilliardsTV',
 			'@77.billiards',
@@ -66,6 +67,7 @@ return [
 			'mrEpicSponge',
 		],
 		'live' => [
+			'UCEWwFAYn4deG5j608z54O_A', // Stockholm
 			'UC4-qYFSm2SFnyU1RExhj80g', // Shooters
 			'UCPwrDqQh_fhog-IhAhWnvnQ', // Sharkstream
 			'UCeNrbqWMOXmp8j15tDbHbqg', // Champions billiard tables
