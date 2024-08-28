@@ -37,6 +37,7 @@ return [
 
 	'tv' => [
 		'channels' => [
+			// '@JrxPoolIndonesia-cr5uy',
 			'@biljardpalatsetstockholm',
 			'@shootersbilliardssportsbar8061',
 			'@HighlightBilliardsTV',
@@ -67,6 +68,7 @@ return [
 			'mrEpicSponge',
 		],
 		'live' => [
+			'UC8g0xqGqoedKrk6J1lvVMdw',  // '@JrxPoolIndonesia-cr5uy',
 			'UCEWwFAYn4deG5j608z54O_A', // Stockholm
 			'UC4-qYFSm2SFnyU1RExhj80g', // Shooters
 			'UCPwrDqQh_fhog-IhAhWnvnQ', // Sharkstream
