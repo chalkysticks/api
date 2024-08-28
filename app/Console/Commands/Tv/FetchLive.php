@@ -54,7 +54,7 @@ class FetchLive extends Command {
 		}
 
 		// Remove old videos
-		$this->removeOldVideos();
+		$this->removeOldVideos($videos);
 
 		// Add new videos
 		foreach ($videos as $video) {
@@ -108,15 +108,20 @@ class FetchLive extends Command {
 	}
 
 	/**
+	 * @param array $newVideos
 	 * @return void
 	 */
-	private function removeOldVideos() {
+	private function removeOldVideos(array $newVideos = []) {
 		if (!!!$this->option('create')) {
 			return;
 		}
 
-		// Remove all live videos
-		Models\TvSchedule::where('is_live', true)->delete();
+		// Remove anything NOT in the list
+		Models\TvSchedule::where('is_live', true)
+			->whereNotIn('embed_url', array_map(function ($video) {
+				return $this->convertYoutubeUrl($video->video_url);
+			}, $newVideos))
+			->delete();
 	}
 
 	/**
