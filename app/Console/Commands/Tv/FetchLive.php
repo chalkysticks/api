@@ -55,6 +55,7 @@ class FetchLive extends Command {
 
 			if ($works) {
 				$embeddable[] = $video;
+				$this->line(" ✅ Embeddable: $video->title");
 			} else {
 				$this->line(" ❌ Not embeddable: $video->title");
 			}
