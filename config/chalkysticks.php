@@ -49,6 +49,7 @@ return [
 			'@SavannahEaston',
 			'@randymallett',
 			'@WPBAbilliards',
+			'@thesharkstream',
 			'AZBtvision',
 			'Bilijar9',
 			'IPAPOOL',
@@ -61,6 +62,7 @@ return [
 			'mrEpicSponge',
 		],
 		'live' => [
+			'UCPwrDqQh_fhog-IhAhWnvnQ', // Sharkstream
 			'UCeNrbqWMOXmp8j15tDbHbqg', // Champions billiard tables
 			'@LegendBilliard',
 			'@MatchroomPool1',
