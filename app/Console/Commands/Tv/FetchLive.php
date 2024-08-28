@@ -44,14 +44,12 @@ class FetchLive extends Command {
 			$model = Models\TvChannel::where(DB::raw('LOWER(channel_id)'), strtolower($channelId))->first();
 			$youtubeId = $model ? $model->youtube_id : $channelId;
 
-			// No ID available
-			if (empty($youtubeId)) {
-				continue;
-			}
-
 			// Fetch videos
 			$videos = array_merge($videos, $this->getSource($youtubeId));
 		}
+
+		// Log
+		print_r($videos);
 
 		// Remove old videos
 		$this->removeOldVideos($videos);
