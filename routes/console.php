@@ -14,7 +14,7 @@ Artisan::command('inspire', function () {
 Schedule::command(Tv\FetchLive::class, ['--create=true'])->everyFiveMinutes();
 
 // Check for new videos
-Schedule::command(Tv\Fetch::class, ['--create=true'])->everyHour();
+Schedule::command(Tv\Fetch::class, ['--create=true'])->hourly();
 
 // Check all URLs once a day
 Schedule::command(Tv\Check::class, ['--all=true'])->weekly();
