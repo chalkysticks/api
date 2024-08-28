@@ -180,6 +180,20 @@ class YouTube {
 	}
 
 	/**
+	 * If the video can be embedded
+	 *
+	 * @param string $videoUrl
+	 * @return bool
+	 */
+	public static function isEmbeddable(string $videoUrl): bool {
+		$videoUrl = str_replace('/embed/', '/watch?v=', $videoUrl);
+		$url = "https://www.youtube.com/oembed?url=$videoUrl&format=json";
+		$json = fetchJson($url);
+
+		return !empty(@$json->title);
+	}
+
+	/**
 	 * @param string $youtubeUrl
 	 * @return string
 	 */

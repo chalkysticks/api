@@ -39,6 +39,7 @@ class FetchLive extends Command {
 	public function handle() {
 		$channels = config('chalkysticks.tv.live');
 		$videos = [];
+		$embeddable = [];
 
 		foreach ($channels as $channelId) {
 			$model = Models\TvChannel::where(DB::raw('LOWER(channel_id)'), strtolower($channelId))->first();
@@ -48,15 +49,26 @@ class FetchLive extends Command {
 			$videos = array_merge($videos, $this->getSource($youtubeId));
 		}
 
+		// Filter out non-embeddable videos
+		foreach ($videos as $video) {
+			$works = Utilities\YouTube::isEmbeddable($video->video_url);
+
+			if ($works) {
+				$embeddable[] = $video;
+			} else {
+				$this->line(" ❌ Not embeddable: $video->title");
+			}
+		}
+
 		// Remove old videos
-		$this->removeOldVideos($videos);
+		$this->removeOldVideos($embeddable);
 
 		// Add new videos
-		foreach ($videos as $video) {
+		foreach ($embeddable as $video) {
 			$this->addVideoToSchedule($video);
 		}
 
-		print_r($videos);
+		print_r($embeddable);
 	}
 
 	/**
@@ -65,7 +77,7 @@ class FetchLive extends Command {
 	 * @param VideoMeta $videoMeta
 	 * @return void
 	 */
-	protected function addVideoToSchedule($video) {
+	protected function addVideoToSchedule(object $video) {
 		// Convert the video URL into a normalized YouTube embed
 		$url = $this->convertYoutubeUrl($video->video_url);
 
