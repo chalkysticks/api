@@ -37,6 +37,7 @@ return [
 
 	'tv' => [
 		'channels' => [
+			'@CueFlix-qo4yz',
 			'@Champions-BilliardTable1-kt6ot',
 			'@ProBilliardTV',
 			'@AccuStats',
