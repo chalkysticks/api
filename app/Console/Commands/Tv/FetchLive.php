@@ -48,9 +48,6 @@ class FetchLive extends Command {
 			$videos = array_merge($videos, $this->getSource($youtubeId));
 		}
 
-		// Log
-		print_r($videos);
-
 		// Remove old videos
 		$this->removeOldVideos($videos);
 

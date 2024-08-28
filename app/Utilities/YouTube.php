@@ -20,7 +20,9 @@ class YouTube {
 		$url = "https://www.googleapis.com/youtube/v3/channels?part={$part}&$queryString[$attempt]=$channelId&key=$apiKey";
 		$json = fetchJson($url);
 
-		if ($json->pageInfo->totalResults === 0 && $attempt < count($queryString) - 1) {
+		if (!$json || !@$json->pageInfo && $attempt < count($queryString) - 1) {
+			return self::fetchChannel($channelId, $part, $attempt + 1);
+		} else if (@$json->pageInfo->totalResults === 0 && $attempt < count($queryString) - 1) {
 			return self::fetchChannel($channelId, $part, $attempt + 1);
 		}
 
@@ -34,6 +36,14 @@ class YouTube {
 	 */
 	public static function fetchLiveChannel(string $channelId, string $part = 'snippet'): object {
 		$apiKey = config('google.youtube.api_key');
+
+		// Wrong type of channel ID
+		if (strlen($channelId) < 20) {
+			$channel = self::fetchChannel($channelId);
+			$channelId = @$channel->items[0]->id;
+		}
+
+		// Fetch channel
 		$url = "https://www.googleapis.com/youtube/v3/search?part=$part&channelId=$channelId&videoEmbeddable=true&eventType=live&type=video&key=$apiKey";
 		$json = fetchJson($url);
 
