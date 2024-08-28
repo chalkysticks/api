@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\v1;
+namespace App\Http\Controllers\v3;
 
 use App\ModelInterfaces;
 use App\Http\Controllers\Controller;
 
 /**
  * @class Ads
- * @package Http/Controllers/v1
+ * @package Http/Controllers/v3
  * @project ChalkySticks API
  */
 class Ads extends Controller {

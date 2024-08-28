@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\v1;
+namespace App\Http\Controllers\v3;
 
 use App\Contracts;
 use App\Http\Controllers\Controller;
@@ -12,7 +12,7 @@ use Illuminate\Http\Response;
 
 /**
  * @class Feed
- * @package Http/Controllers/v1
+ * @package Http/Controllers/v3
  * @project ChalkySticks API
  */
 class Feed extends Controller implements Contracts\Controller {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\v1;
+namespace App\Http\Controllers\v3;
 
 use App\Http\Controllers\Controller;
 use App\ModelInterfaces;
@@ -9,7 +9,7 @@ use Illuminate\Http\Response;
 
 /**
  * @class Teams
- * @package Http/Controllers/v1
+ * @package Http/Controllers/v3
  * @project ChalkySticks API
  */
 class Teams extends Controller {

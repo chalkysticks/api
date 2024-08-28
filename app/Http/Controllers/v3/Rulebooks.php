@@ -1,15 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\v1;
+namespace App\Http\Controllers\v3;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
 
 /**
  * @class Rulebooks
- * @package Http/Controllers/v1
+ * @package Http/Controllers/v3
  * @project ChalkySticks API
  */
 class Rulebooks extends Controller {
