@@ -215,40 +215,49 @@ class YouTube {
 		// Setup curl handles
 		foreach ($videos as $videoId => $video) {
 			$ch = curl_init($video->url);
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-			curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+
+			curl_setopt_array($ch, [
+				CURLOPT_FOLLOWLOCATION => true,  // Follow redirects
+				CURLOPT_HEADER => false,         // We don't need headers for this check
+				CURLOPT_MAXREDIRS => 5,          // Maximum number of redirects to follow
+				CURLOPT_NOBODY => false,         // We need the body content to check if it's live
+				CURLOPT_RETURNTRANSFER => true,
+				CURLOPT_TIMEOUT => 10,
+			]);
+
 			curl_multi_add_handle($mh, $ch);
 			$curlHandles[$videoId] = $ch;
 		}
 
 		// Execute parallel requests
 		$running = null;
-
 		do {
-			curl_multi_exec($mh, $running);
-		} while ($running);
+			$status = curl_multi_exec($mh, $running);
+		} while ($running > 0 && $status == CURLM_OK);
 
 		// Process results
 		foreach ($curlHandles as $videoId => $ch) {
 			$html = curl_multi_getcontent($ch);
+			$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
-			if (self::isLiveStream($html)) {
+			if ($httpCode == 200 && self::isLiveStream($html)) {
 				$liveStreams[] = (object) [
 					'id' => $videoId,
 					'liveStreamingDetails' => (object) ['actualStartTime' => date('c')],
 					'snippet' => (object) [
-						'channelTitle' => (string) $video->entry->author->name,
-						'description' => (string) $video->entry->author->name,
+						'channelTitle' => (string) $videos[$videoId]->entry->author->name,
+						'description' => (string) $videos[$videoId]->entry->author->name,
 						'duration' => 0,
-						'publishTime' => (string) $video->entry->published,
+						'publishTime' => (string) $videos[$videoId]->entry->published,
 						'resourceId' => (object) ['videoId' => $videoId],
 						'thumbnail' => "https://i.ytimg.com/vi/$videoId/hqdefault.jpg",
-						'title' => (string) $video->entry->title,
+						'title' => (string) $videos[$videoId]->entry->title,
 					],
 				];
 			}
 
 			curl_multi_remove_handle($mh, $ch);
+			curl_close($ch);
 		}
 
 		curl_multi_close($mh);
