@@ -145,8 +145,8 @@ class FetchLive extends Command {
 					'duration' => 0,
 					'thumbnail_url' => @$video->snippet->thumbnails->standard->url ?? @$video->snippet->thumbnails->medium->url,
 					'title' => $video->snippet->channelTitle,
-					'video_id' => $video->id->videoId,
-					'video_url' => 'https://www.youtube.com/embed/' . $video->id->videoId,
+					'video_id' => $video->id,
+					'video_url' => 'https://www.youtube.com/embed/' . $video->id,
 				];
 
 				$videos[] = $data;

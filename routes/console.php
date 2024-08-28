@@ -11,10 +11,10 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote')->hourly();
 
 // Check for live videos
-Schedule::command(Tv\FetchLive::class, ['--create=true'])->everyFiveMinutes();
+Schedule::command(Tv\FetchLive::class, ['--create=true'])->everyThreeMinutes();
 
 // Check for new videos
-Schedule::command(Tv\Fetch::class, ['--create=true'])->hourly();
+Schedule::command(Tv\Fetch::class, ['--create=true'])->daily();
 
 // Check all URLs once a day
-Schedule::command(Tv\Check::class, ['--all=true'])->weekly();
+// Schedule::command(Tv\Check::class, ['--all=true'])->weekly();
