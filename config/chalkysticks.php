@@ -37,6 +37,9 @@ return [
 
 	'tv' => [
 		'channels' => [
+			'@shootersbilliardssportsbar8061',
+			'@HighlightBilliardsTV',
+			'@77.billiards',
 			'@CueFlix-qo4yz',
 			'@Champions-BilliardTable1-kt6ot',
 			'@ProBilliardTV',
@@ -63,6 +66,7 @@ return [
 			'mrEpicSponge',
 		],
 		'live' => [
+			'UC4-qYFSm2SFnyU1RExhj80g', // Shooters
 			'UCPwrDqQh_fhog-IhAhWnvnQ', // Sharkstream
 			'UCeNrbqWMOXmp8j15tDbHbqg', // Champions billiard tables
 			'@LegendBilliard',
