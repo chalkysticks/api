@@ -4,11 +4,11 @@
  * @param string $url
  * @return object
  */
-function fetchJson(string $url): object {
+function fetchJson(string $url): ?object {
 	try {
 		$response = file_get_contents($url);
 	} catch (\Exception $e) {
-		return (object) [];
+		return null;
 	}
 
 	return json_decode($response);

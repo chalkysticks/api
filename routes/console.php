@@ -11,7 +11,7 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote')->hourly();
 
 // Check for live videos
-Schedule::command(Tv\FetchLive::class, ['--create=true'])->everyThreeMinutes();
+Schedule::command(Tv\FetchLive::class, ['--create=true'])->everyTenMinutes();
 
 // Check for new videos
 Schedule::command(Tv\Fetch::class, ['--create=true'])->daily();
