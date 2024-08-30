@@ -66,9 +66,11 @@ class YouTube {
 
 			foreach ($xml->entry as $entry) {
 				$videoId = (string) $entry->children('yt', true)->videoId;
+				$channelId = (string) $entry->children('yt', true)->channelId;
 				$videos[$videoId] = (object) [
+					'channel_id' => $channelId,
+					'entry' => $entry,
 					'url' => "https://www.youtube.com/watch?v=$videoId",
-					'entry' => $entry
 				];
 			}
 
@@ -245,6 +247,7 @@ class YouTube {
 					'id' => $videoId,
 					'liveStreamingDetails' => (object) ['actualStartTime' => date('c')],
 					'snippet' => (object) [
+						'channelId' => (string) $videos[$videoId]->channel_id,
 						'channelTitle' => (string) $videos[$videoId]->entry->author->name,
 						'description' => (string) $videos[$videoId]->entry->author->name,
 						'duration' => 0,

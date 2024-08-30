@@ -134,6 +134,7 @@ class FetchLive extends Command {
 			->whereNotIn('embed_url', array_map(function ($video) {
 				return $this->convertYoutubeUrl($video->video_url);
 			}, $newVideos))
+			->where('embed_url', 'like', '%youtube.com%')
 			->delete();
 	}
 

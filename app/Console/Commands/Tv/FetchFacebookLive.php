@@ -8,7 +8,7 @@ use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Log;
 
 /**
- * php artisan tv:fetchlive --create=true
+ * php artisan tv:fetchfacebooklive --create=true
  *
  * @class FetchFacebookLive
  * @package Console/Commands/Tv
