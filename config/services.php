@@ -14,6 +14,13 @@ return [
 	|
 	*/
 
+	'facebook' => [
+		'page' => [
+			'access_token' => env('FACEBOOKBOT_PAGE_ACCESS_TOKEN'),
+			'id' => 'chalkysticks',
+		],
+	],
+
 	'postmark' => [
 		'token' => env('POSTMARK_TOKEN'),
 	],

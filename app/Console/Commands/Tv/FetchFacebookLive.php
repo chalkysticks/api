@@ -116,7 +116,7 @@ class FetchFacebookLive extends Command {
 		$videos = [];
 
 		// Get all live videos
-		$PAGE_ACCESS_TOKEN = env('FACEBOOKBOT_PAGE_ACCESS_TOKEN');
+		$PAGE_ACCESS_TOKEN = config('services.facebook.page.access_token');
 		$PAGE_ID = 'chalkysticks';
 		$url = "https://graph.facebook.com/v20.0/{$PAGE_ID}/feed?fields=message,attachments,created_time,is_hidden,is_expired,is_published&access_token={$PAGE_ACCESS_TOKEN}";
 
