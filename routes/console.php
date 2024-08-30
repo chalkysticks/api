@@ -10,8 +10,11 @@ Artisan::command('inspire', function () {
 	$this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote')->hourly();
 
+// Check for live facebook videos
+Schedule::command(Tv\FetchFacebookLive::class, ['--create=true'])->everyTenMinutes();
+
 // Check for live videos
-Schedule::command(Tv\FetchLive::class, ['--create=true'])->everyTenMinutes();
+Schedule::command(Tv\FetchLive::class, ['--create=true'])->hourly();
 
 // Check for new videos
 Schedule::command(Tv\Fetch::class, ['--create=true'])->daily();

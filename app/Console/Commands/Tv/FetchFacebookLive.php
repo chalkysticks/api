@@ -5,6 +5,7 @@ namespace App\Console\Commands\Tv;
 use App\Models;
 use Illuminate\Console\Command;
 use Illuminate\Database\QueryException;
+use Illuminate\Support\Facades\Log;
 
 /**
  * php artisan tv:fetchlive --create=true
@@ -34,6 +35,9 @@ class FetchFacebookLive extends Command {
 	 * @return mixed
 	 */
 	public function handle() {
+		// Log to laravel.log
+		Log::info("Fetching live videos from Facebook at " . date('Y-m-d H:i:s'));
+
 		// Only has a URL and title
 		$videos = $this->getFacebookVideos();
 

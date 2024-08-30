@@ -7,6 +7,7 @@ use App\Utilities;
 use DB;
 use Illuminate\Console\Command;
 use Illuminate\Database\QueryException;
+use Illuminate\Support\Facades\Log;
 
 /**
  * php artisan tv:fetchlive --create=true
@@ -41,6 +42,10 @@ class FetchLive extends Command {
 		$videos = [];
 		$embeddable = [];
 
+		// Log to laravel.log
+		Log::info("Fetching live videos from YouTube at " . date('Y-m-d H:i:s'));
+
+		// Get IDs from the database
 		foreach ($channels as $channelId) {
 			$model = Models\TvChannel::where(DB::raw('LOWER(channel_id)'), strtolower($channelId))->first();
 			$youtubeId = $model ? $model->youtube_id : $channelId;
