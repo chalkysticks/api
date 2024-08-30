@@ -42,6 +42,7 @@ class Tv extends Controller {
 		// Get all live events
 		$collection = Models\TvSchedule::where('is_live', true)
 			->whereNull('end_air_at')
+			->orderBy('created_at', 'desc')
 			->limit(50)
 			->get();
 

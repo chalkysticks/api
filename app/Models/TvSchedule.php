@@ -22,7 +22,7 @@ class TvSchedule extends Model {
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['id', 'title', 'description', 'duration', 'video_meta', 'embed_url', 'is_live', 'flags', 'air_at', 'end_air_at', 'youtube_channel_id'];
+	protected $fillable = ['id', 'title', 'description', 'duration', 'video_meta', 'embed_url', 'thumbnail_url', 'is_live', 'flags', 'air_at', 'end_air_at', 'youtube_channel_id'];
 
 	/**
 	 * @return void

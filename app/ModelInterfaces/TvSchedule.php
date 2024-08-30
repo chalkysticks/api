@@ -42,6 +42,7 @@ class TvSchedule extends ModelInterface {
 			'duration' => $model->duration,
 			'video_meta' => $model->video_meta,
 			'embed_url' => $model->embed_url,
+			'thumbnail_url' => $model->thumbnail_url,
 			'is_live' => $model->is_live,
 			'air_at' => (string) $model->air_at,
 			'created_at' => (string) $model->created_at,
