@@ -168,17 +168,20 @@ class FetchFacebookLive extends Command {
 		// Fetch all videos to make sure they're embeddable and dont have duration
 		foreach ($embeddable as $item) {
 			// including "embeddable" fails sometimes
-			// $url = "https://graph.facebook.com/v20.0/{$item->video_id}?fields=format,length,embeddable&access_token={$PAGE_ACCESS_TOKEN}";
-			$url = "https://graph.facebook.com/v20.0/{$item->video_id}?fields=format,length&access_token={$PAGE_ACCESS_TOKEN}";
-			$response = file_get_contents($url);
-			$json = (object) json_decode($response);
+			$url = "https://graph.facebook.com/v20.0/{$item->video_id}?fields=format,length,embeddable&access_token={$PAGE_ACCESS_TOKEN}";
 
-			// Less than an hour
-			if ($json->length > 60 * 60 || $json->length < 1) {
-				$output[] = $item;
+			try {
+				$response = file_get_contents($url);
+				$json = (object) json_decode($response);
+
+				// Less than an hour
+				if ($json->length > 60 * 60 || $json->length < 1) {
+					$output[] = $item;
+				}
+			} catch (\Exception $e) {
+				// Do nothing
 			}
 		}
-
 
 		return $output;
 	}
