@@ -73,8 +73,8 @@ return [
 			'UC4-qYFSm2SFnyU1RExhj80g', // Shooters
 			'UCPwrDqQh_fhog-IhAhWnvnQ', // Sharkstream
 			'UCeNrbqWMOXmp8j15tDbHbqg', // Champions billiard tables
+			'UC-YHhXeWjF80OkVxR-HE2Xw', // @matchroom1
 			'@LegendBilliard',
-			'@MatchroomPool1',
 			'@SnookerPlanet',
 			'@fedorslepchenkov',
 			// 'UC2rZP5KZgwVUfqKPjsd-o6A', // ipapool
