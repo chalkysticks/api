@@ -66,8 +66,10 @@ return [
 			// '@VenomTrickshotsOfficial',
 			'genipool14',
 			'mrEpicSponge',
+			// '@WCS-Stream-2',
 		],
 		'live' => [
+			'UCn0OZcrmSzxnKQTsEPBrVGw', // '@WCS-Stream-2',
 			'UC8g0xqGqoedKrk6J1lvVMdw',  // '@JrxPoolIndonesia-cr5uy',
 			'UCEWwFAYn4deG5j608z54O_A', // Stockholm
 			'UC4-qYFSm2SFnyU1RExhj80g', // Shooters
